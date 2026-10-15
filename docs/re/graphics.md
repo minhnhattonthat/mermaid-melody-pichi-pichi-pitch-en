@@ -4,7 +4,8 @@ Pipeline: tools/gfx/redraw.py (one function per resource) -> gfx/en/<bank>_<idx>
 (recompress, repoint 5-byte record). Sheet layout: tools/gfx/res.py. Screen-space edits: tools/gfx/screen.py
 (edit_obj / edit_bg on PPU dumps in gfx/dumps/). Find a resource from a screen: tools/gfx/whose.py DUMP --rect.
 Loads per screen: tools/lua/gfxload.lua + tools/gfx/loadmap.py. Graphics-only test ROM: tools/gfx/testbuild.py.
-Terms: docs/gfx_terms.md.
+Terms: docs/gfx_terms.md. Aliases: records sharing a stream (#73-#82 in #72, #33 = #32, #36/#38 in #35) are repointed
+by apply.py to the matching new chunk.
 
 | res | content | screen / route | status |
 |---|---|---|---|

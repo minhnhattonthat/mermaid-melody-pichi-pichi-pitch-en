@@ -26,14 +26,24 @@ def load_sheet(path):
 
 
 def encode_res(data, info):
+    """-> (compressed bytes, offset of each chunk inside them)"""
     csz = banks.chunk_size(info)
     n = (info >> 4) + 1
     assert len(data) == n * csz
     # info&4 chunks get a load-time add on nonzero literals; raw (add 0) data recompresses consistently
-    out = bytearray()
+    out, starts = bytearray(), []
     for c in range(n):
+        starts.append(len(out))
         out += _compress_cached(data[c * csz:(c + 1) * csz])
-    return bytes(out)
+    return bytes(out), starts
+
+
+def chunk_starts(rom, off, info):
+    starts = []
+    for _ in range((info >> 4) + 1):
+        starts.append(off)
+        _, off = banks.mmcomp.decompress(rom, off, banks.chunk_size(info))
+    return starts
 
 
 def _compress_cached(chunk):
@@ -50,6 +60,7 @@ def _compress_cached(chunk):
 
 
 def apply(rom, alloc):
+    done = set()
     for path in sorted(glob.glob(os.path.join(EN, "*.png"))):
         name = os.path.basename(path)[:-4]
         bank_s, idx_s = name.split("_")[:2]
@@ -58,8 +69,16 @@ def apply(rom, alloc):
         new = res.from_sheet(load_sheet(path), info, len(orig))
         if new == orig:
             continue
-        z = encode_res(new, info)
+        z, zst = encode_res(new, info)
         assert banks.decode_res(z + b"\0" * 8, 0, info)[0] == new, name
         off = alloc.put(z)
-        slot = int(bank, 16) + 5 * idx
-        rom[slot:slot + 4] = (0x08000000 + off).to_bytes(4, "little")
+        # repoint this record and every alias record (any bank) that starts at one of its chunks
+        # (e.g. #73-#82 are single-plate views into #72's stream, #36/#38 into #35)
+        moved = {o: off + z0 for o, z0 in zip(chunk_starts(rom, res.rec(bank, idx)[0], info), zst)}
+        for b, recs in res.DIRS.items():
+            for i in range(len(recs)):
+                slot = int(b, 16) + 5 * i
+                p = int.from_bytes(rom[slot:slot + 4], "little") & 0x1FFFFFF
+                if p in moved and (b, i) not in done:
+                    rom[slot:slot + 4] = (0x08000000 + moved[p]).to_bytes(4, "little")
+        done.add((bank, idx))
