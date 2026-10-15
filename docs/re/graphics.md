@@ -2,28 +2,28 @@
 
 Pipeline: tools/gfx/redraw.py (one function per resource) -> gfx/en/<bank>_<idx>.png -> tools/gfx/apply.py
 (recompress, repoint 5-byte record). Sheet layout: tools/gfx/res.py. Screen-space edits: tools/gfx/screen.py
-(edit_obj on PPU dumps in gfx/dumps/). Find a resource from a screen: tools/gfx/whose.py DUMP --rect.
+(edit_obj / edit_bg on PPU dumps in gfx/dumps/). Find a resource from a screen: tools/gfx/whose.py DUMP --rect.
 Loads per screen: tools/lua/gfxload.lua + tools/gfx/loadmap.py. Graphics-only test ROM: tools/gfx/testbuild.py.
+Terms: docs/gfx_terms.md.
 
 | res | content | screen / route | status |
 |---|---|---|---|
-| #2 | title logo マーメイドメロディー ぴちぴちピッチ + 講談社… copyright | title (gfx_mainmenu.txt first 1600 f) | English |
-| #27 | 11 menu buttons (ひとりでピッチ …) + empty message bar | main menu + sub menus (gfx_mainmenu.txt) | English |
+| #2 | title logo + 講談社… copyright | title (gfx_mainmenu.txt, first 1600 f) | English |
+| #27 | 11 menu buttons + empty message bar | main menu + sub menus (gfx_mainmenu.txt) | English |
 | #28-33 | main menu message bars | main menu carousel | English |
-| #35 | name entry kana grid (2 pages) | gfx_nameentry.txt | English (Latin grid per controller layout) |
+| #35 | kana grid (2 pages) | gfx_nameentry.txt; Hippo lyric editor | English (Latin grid, controller layout) |
 | #209 | name entry header START/SELECTボタン | gfx_nameentry.txt | English |
-| #72 | song plates (titles + furigana, Hippo/Nothing-here plates) | gfx_songselect.txt, Live (main menu right x2, A) | English |
-| #7 | play screen てん (score unit, 2 tiles) | gfx_solo.txt (song play) | English "pts" (abbrev. forced: 16 px) |
-| #58 | difficulty かんたん/ふつう/むずかしい, A/B ボタン けってい もどる, いつもの/きぶん | song select -> A (work/states/gfx_diff2.mss) | TODO |
-| #40 | results/score labels (かんたん ふつう むずかしい いつもの きぶん small) + score text | results screen | TODO |
-| #41 | big digits + てん / scoring glyphs | results | TODO (digits fine; kana part) |
-| #57 | song-maker items ヘッドホン 矢印 あり なし なまえ 絵 やじるし はいけい | Hippo Pitch editor | TODO |
-| #119 | post-song buttons もどる みる セーブ | after results | TODO |
-| #120 | はい/いいえ/もどる/あそぶ/きいてみる/セーブ, START メニューへ, セーブする?, まえとかわったけどセーブ, SELECT きりかえ | Hippo editor / save prompts | TODO |
-| #176 | ゲームオーバー / クリアもくひょう / クリア | play result banners | TODO |
-| #157-175, #177 | full-screen title cards with logo text | song intros / mode cards | TODO (survey) |
-| #45, #39 | mermaid melody frame | name entry bg | Latin already |
-| dd62a0 (lyrics/dancers) | character art, no text | play | no text |
-| ef4890/f24461/f5837f/f8854f | movie frames | song intro video | no text |
+| #72 | song plates (titles, furigana, Hippo/Nothing-here plates) | gfx_songselect.txt; Live (menu right x2, A) | English |
+| #7 | play HUD てん (2 tiles) | song play (gfx_solo.txt) | English "pts" (abbreviation, 16 px) |
+| #58 | difficulty bubbles, いつもの/きぶん, A/B hint | gfx_difficulty.txt | English (きぶん -> "Freestyle", meaning unverified) |
+| #40 | results labels, small てん, best score, badges | results (state work/qa/gfx_solo/s007000.mss +300 f) | English; Easy/Normal/Usual badges checked; Hard + Freestyle badge strips NOT edited (no capture) |
+| #41 | results big てん | results | English "pts" |
+| #119 | post-song みる/セーブ/もどる | results + A | English |
+| #120 | Hippo editor menu bubbles, START/SELECT headers | Hippo Pitch (menu left x2, A; START) | English; セーブする? / まえとかわったけどセーブ panels NOT captured, still Japanese |
+| #57 | Style Pitch options plates (ヘッドホン はいけい やじるし あり なし 矢印 絵 なまえ) | menu left, A, right, A | English |
+| #157-#175, #177 | full-screen stills (save broken, Game Over, ending cards) | | controller |
+| #176 | ゲームオーバー / クリアもくひょう / クリア banners | | controller |
+| #45, #39 | mermaid melody frame | | Latin already |
+| dd62a0, ef4890, f24461, f5837f, f8854f, eb19e0, fc0830, 0273d0 | art, video frames, arrows, digits | | no Japanese text |
 
-Debug menu (state 0x0001): font-drawn, text workstream.
+Debug menu: font-drawn (text workstream).

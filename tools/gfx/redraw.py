@@ -414,7 +414,21 @@ def r_040():
             P._put(c, x - 1, y - 1, P.dilate(m, 1, True), fill + 1)
             P._put(c, x, y, m, 15)
     screen.edit_bg(dump("results"), sh, 2, 0, (0, 0, 240, 160), draw)
+    # other difficulty badges (their text strips are separate tiles; one results dump per difficulty)
+    for dn, (x0, y0, x1, y1), fill, tix, text in RESULT_BADGES_MORE:
+        def drawb(c, cov, x0=x0, y0=y0, x1=x1, y1=y1, fill=fill, tix=tix, text=text):
+            blk = c[y0:y1, x0:x1]
+            blk[np.isin(blk, tix)] = fill
+            m = P.trim_rows(P.render(text, bold=True))
+            x, y = (x0 + x1 - m.shape[1]) // 2, (y0 + y1 - m.shape[0]) // 2
+            P._put(c, x - 1, y - 1, P.dilate(m, 1, True), fill + 1)
+            P._put(c, x, y, m, 15)
+            c[~cov] = -1
+        screen.edit_bg(dump(dn), sh, 2, 0, (0, 0, 240, 64), drawb)
     save(sh, B0, 40)
+
+
+RESULT_BADGES_MORE = [("results_normal", (121, 8, 166, 23), 8, (9, 13, 14, 15), "Normal")]
 
 
 # ---------------------------------------------------------------- results total unit (#41 OBJ origin 0,24): big てん
@@ -463,7 +477,26 @@ def r_120():
     save(sh, B0, 120)
 
 
-ALL = {"120": r_120, "041": r_041, "027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007,
+# ---------------------------------------------------------------- Style Pitch options plates (#57)
+OPTION_PLATES = [((0, 2, 82, 26), 5, "Headphones"), ((84, 2, 42, 26), 5, "Arrow"), ((128, 2, 46, 26), 2, "On"),
+                 ((176, 2, 46, 26), 2, "Off"), ((2, 36, 26, 24), 5, "Art"), ((128, 36, 63, 24), 5, "Arrows"),
+                 ((192, 36, 63, 24), 5, "Backdrop"), ((132, 68, 58, 24), 5, "Name")]
+
+
+def r_057():
+    sh = load(B0, 57)
+    for (x, y, w, h), fill, lab in OPTION_PLATES:
+        tix = (11, 12, 13, 14, 15) if fill == 5 else (7, 8, 9, 10, 15)
+        box = sh[y + 2:y + h - 2, x + 2:x + w - 2]
+        box[np.isin(box, tix)] = fill
+        m = P.trim_rows(P.render(lab, bold=P.width(lab, bold=True) <= w - 6))
+        cx, cy = x + (w - m.shape[1]) // 2, y + (h - m.shape[0]) // 2
+        P._put(sh, cx - 1, cy - 1, P.dilate(m, 1, True), 11 if fill == 5 else 7)
+        P._put(sh, cx, cy, m, 15)
+    save(sh, B0, 57)
+
+
+ALL = {"057": r_057, "120": r_120, "041": r_041, "027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007,
        "058": r_058, "119": r_119, "040": r_040}
 ALL.update({f"{i:03d}": r_bar(i) for i in BARS})
 
