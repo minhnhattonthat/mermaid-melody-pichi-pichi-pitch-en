@@ -1,0 +1,16 @@
+# cold boot -> main menu, carousel right x4, A on Live
+1300 -
+20 start
+300 -
+20 start
+200 -
+20 start
+250 -
+6 right
+90 -
+6 right
+90 -
+6 right
+90 -
+6 right
+90 -
