@@ -435,7 +435,35 @@ def r_041():
     save(sh, B0, 41)
 
 
-ALL = {"041": r_041, "027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007,
+# ---------------------------------------------------------------- Hippo lyric editor (#120, OBJ origin 16,8)
+def r_120():
+    import screen
+    sh = load(B0, 120)
+    for (x, y, lab) in ((0, 0, "Yes"), (64, 0, "No"), (0, 32, "Back"), (64, 32, "Play"),
+                        (0, 64, "Listen"), (64, 64, "Save")):
+        dark = x == 0
+        fill = 3 if dark else 10
+        relabel(sh, x, y, 64, 32, fill, (5, 6, 7, 8) if dark else (11, 12, 13, 14, 15), lab,
+                ink=8 if dark else 15, ring=5 if dark else 12)
+
+    def head(c, cov):
+        blk = c[:, 46:120]
+        blk[blk >= 0] = 0
+        text_at(c, 54, 4, "→", 15, 5)          # ボタン sprite (x 46-77) is shared with the SELECT header
+        text_at(c, 80, 5, "Menu", 15, 5, bold=True)
+        c[~cov] = -1
+    screen.edit_obj(dump("hippo"), sh, (16, 8), (0, 0, 120, 18), head)
+
+    def head2(c, cov):                                  # "SELECTボタン きりかえ" (entry mode); x relative to 120
+        blk = c[:, 84:120]
+        blk[blk >= 0] = 0
+        text_at(c, 88, 5, "A/a", 15, 5, bold=True)
+        c[~cov] = -1
+    screen.edit_obj(dump("hippo_entry"), sh, (16, 8), (120, 0, 240, 18), head2)
+    save(sh, B0, 120)
+
+
+ALL = {"120": r_120, "041": r_041, "027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007,
        "058": r_058, "119": r_119, "040": r_040}
 ALL.update({f"{i:03d}": r_bar(i) for i in BARS})
 
