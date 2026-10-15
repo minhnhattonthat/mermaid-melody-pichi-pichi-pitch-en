@@ -45,13 +45,18 @@ def sheet_px(vram, sx, sy):
     return (b >> 4) if sx & 1 else (b & 15)
 
 
-def obj_layer(d):
+def obj_layer(d, area=None):
+    """area = (x0, y0, x1, y1) in sheet pixels: only sprites whose tiles start inside it are drawn."""
     idx = np.full((160, 240), -1, np.int16)
     pal = np.zeros((160, 240), np.int16)
     src = np.full((160, 240, 2), -1, np.int16)
     for o in reversed(d.objs()):  # draw back to front so OAM 0 ends on top
         if o["bpp8"]:
             continue
+        if area:
+            tx, ty = (o["tile"] % 32) * 8, (o["tile"] // 32) * 8
+            if not (area[0] <= tx < area[2] and area[1] <= ty < area[3]):
+                continue
         tx0, ty0 = o["tile"] % 32, o["tile"] // 32
         for yy in range(o["h"]):
             for xx in range(o["w"]):
@@ -76,10 +81,10 @@ def edit_obj(dump, sheet, origin, rect, draw, view=None):
     sheet: resource index sheet (res.to_sheet); origin: (tile x, tile y) of the sheet's top-left in OBJ VRAM;
     rect: (x0, y0, x1, y1) screen area; draw(canvas, covered) edits canvas in place (uint8 indices, -1 = no sprite).
     Pixels are written back only where a sprite of this resource covers the screen."""
-    idx, pal, src = obj_layer(dump)
-    x0, y0, x1, y1 = rect
     ox, oy = origin[0] * 8, origin[1] * 8
     H, W = sheet.shape
+    idx, pal, src = obj_layer(dump, (ox, oy, ox + W, oy + H))
+    x0, y0, x1, y1 = rect
     cov = np.zeros((y1 - y0, x1 - x0), bool)
     canvas = np.zeros((y1 - y0, x1 - x0), np.int16) - 1
     for y in range(y0, y1):

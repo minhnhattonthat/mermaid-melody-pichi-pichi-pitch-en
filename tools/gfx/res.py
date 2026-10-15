@@ -1,9 +1,9 @@
 """Bank resource <-> editable 4bpp index sheet.
 
 Layouts (decided by the info byte, see docs/re/README.md):
-  info & 8 (OBJ/strip): chunk c (of N) slice s (0x200 B = 16 tiles) lands at sheet row (c % H)*4+s, half c // H,
-                        H = ceil(N/2) if info&1 else 8: a sheet 32 tiles wide (2D OBJ VRAM order, checked
-                        against gfxload.lua DMA logs for #27 #28 #35 #209).
+  info & 8 (OBJ/strip): chunk c slice s (0x200 B = 16 tiles); info&1: row (c//2)*4+s, half c%2;
+                        else row (c%8)*4+s, half c//8. Sheet 32 tiles wide = 2D OBJ VRAM order (checked against
+                        gfxload.lua DMA logs for #27 #28 #35 #72 #209).
   else (linear):        tiles in order, 32 tiles per sheet row.
 4bpp only (8bpp resources are flagged and handled separately).
 """
@@ -48,14 +48,15 @@ def slots(n_bytes, info):
     res = []
     if info & 8:
         N = (info >> 4) + 1
-        H = max(1, (N + 1) // 2) if info & 1 else 8  # bit0: two halves side by side; else 8 chunks per column
         csz = banks.chunk_size(info)
         for t in range(nt):
             o = t * 32
             c, r = divmod(o, csz)
             s, k = divmod(r, 0x200)
-            row = (c % H) * 4 + s
-            half = c // H
+            if info & 1:   # chunks alternate left/right half, 4 tile rows per pair
+                row, half = (c // 2) * 4 + s, c % 2
+            else:          # 8 chunks down the left half, then the right half
+                row, half = (c % 8) * 4 + s, c // 8
             res.append((o, half * 16 + k // 32, row))
     else:
         for t in range(nt):

@@ -1,0 +1,16 @@
+# cold boot -> main menu -> Your Pitch -> Name Pitch -> name entry
+1300 -
+20 start
+300 -
+20 start
+200 -
+20 start
+250 -
+6 left
+120 -
+6 a
+200 -
+6 a
+200 -
+6 a
+300 -
