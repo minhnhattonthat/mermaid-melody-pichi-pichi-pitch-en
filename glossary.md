@@ -67,4 +67,11 @@ Kept game-neutral where possible so the sequel (Pichi Pichi Party, sibling repo)
 | クラリネットをこわしちゃった | I Broke My Clarinet | bonus song (French folk song) |
 
 ## Decisions from earlier batches
-- (none yet)
+- Lyrics: every karaoke line starts with a capital letter (each line is shown alone); never swap the content of two
+  timed lines.
+- 変化系/操作系/具現化系/特質系 -> Transmuter / Manipulator / Conjurer / Specialist (Hunter x Hunter Nen types left in
+  the engine).
+- ねーちゃん / にーちゃん -> Sis / Bro. うたをきく -> Listen. 点 (score) -> points.
+- 7つのうみ -> the seven seas; 7つのくに -> the seven lands; メロディア -> Melodia; やくそくのばしょ -> the promised land.
+- パキャマラド (クラリネット song refrain) -> "Au pas, camarade".
+- Credits: 作詞 Lyrics, 作曲 Music, 編曲 Arrangement, 歌 Vocals, 協力 Cooperation, 原案 Original Concept, 制作 Production.

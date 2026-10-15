@@ -102,7 +102,7 @@
   ],
   "inner_ids": [],
   "jp": "セーブデータが壊れています　TT",
-  "en": "The save data is damaged TT",
+  "en": "The save data is damaged T_T",
   "notes": "",
   "box": "fit"
  },
@@ -193,9 +193,9 @@
   ],
   "inner_ids": [],
   "jp": "変化系",
-  "en": "Changer",
+  "en": "Transmuter",
   "notes": "",
-  "box": "fit"
+  "box": "leftover"
  },
  {
   "id": "t021B",
@@ -204,9 +204,9 @@
   ],
   "inner_ids": [],
   "jp": "操作系",
-  "en": "Handler",
+  "en": "Manipulator",
   "notes": "",
-  "box": "fit"
+  "box": "leftover"
  },
  {
   "id": "t0220",
@@ -217,7 +217,7 @@
   "jp": "具現化系",
   "en": "Conjurer",
   "notes": "",
-  "box": "fit"
+  "box": "leftover"
  },
  {
   "id": "t0228",
@@ -226,9 +226,9 @@
   ],
   "inner_ids": [],
   "jp": "特質系",
-  "en": "Special",
+  "en": "Specialist",
   "notes": "",
-  "box": "fit"
+  "box": "leftover"
  },
  {
   "id": "t022E",
@@ -238,7 +238,7 @@
   ],
   "inner_ids": [],
   "jp": "[FA 05 8C 40][FC 82]セーブする\n[FC 82]あそぶ!\n[FC 82]うたをきく\n[FC 82]もどる[FA 05 FF]",
-  "en": "[FA 05 8C 40][FC 82]Save\n[FC 82]Play!\n[FC 82]Hear Songs\n[FC 82]Back[FA 05 FF]",
+  "en": "[FA 05 8C 40][FC 82]Save\n[FC 82]Play!\n[FC 82]Listen\n[FC 82]Back[FA 05 FF]",
   "notes": "",
   "box": "fit"
  },
@@ -880,7 +880,7 @@
   ],
   "inner_ids": [],
   "jp": "みんなでうたおう\nヒッポがおどる\nるちあとはのんと\nリナのうただよ\nアハハハハハハハ\nウフフフフフフ\nエヘヘヘヘヘヘヘ\nオホホホホ",
-  "en": "Let's all sing together\nHippo is dancing\nIt's Lucia, Hanon\nand Rina's song!\nA-ha-ha-ha-ha-ha-ha-ha\nU-fu-fu-fu-fu-fu\nE-he-he-he-he-he-he-he\nO-ho-ho-ho-ho",
+  "en": "Let's all sing together\nHippo is dancing\nIt's Lucia, Hanon\nAnd Rina's song!\nA-ha-ha-ha-ha-ha-ha-ha\nU-fu-fu-fu-fu-fu\nE-he-he-he-he-he-he-he\nO-ho-ho-ho-ho",
   "notes": "",
   "box": "lyric"
  },
@@ -1181,7 +1181,7 @@
   "ids": [],
   "inner_ids": [],
   "jp": "試験もなんにも　ない",
-  "en": "or tests or anything at all",
+  "en": "Or tests or anything at all",
   "notes": "",
   "box": "lyric"
  },
@@ -1410,7 +1410,7 @@
   ],
   "inner_ids": [],
   "jp": "たからものを　だいて",
-  "en": "treasure close to their heart",
+  "en": "Treasure close to their heart",
   "notes": "",
   "box": "lyric"
  },
@@ -1421,7 +1421,7 @@
   ],
   "inner_ids": [],
   "jp": "ひとは　うまれてくる",
-  "en": "every person is born",
+  "en": "Every person is born",
   "notes": "",
   "box": "lyric"
  },
@@ -1443,7 +1443,7 @@
   ],
   "inner_ids": [],
   "jp": "わすれないで",
-  "en": "please don't forget them",
+  "en": "Please don't forget them",
   "notes": "",
   "box": "lyric"
  },
@@ -1509,7 +1509,7 @@
   ],
   "inner_ids": [],
   "jp": "やくそくの　ばしょへ",
-  "en": "toward the promised land",
+  "en": "Toward the promised land",
   "notes": "",
   "box": "lyric"
  },
@@ -1531,7 +1531,7 @@
   ],
   "inner_ids": [],
   "jp": "はてしない　みらいにかえて",
-  "en": "into an endless future",
+  "en": "Into an endless future",
   "notes": "",
   "box": "lyric"
  },
@@ -1553,7 +1553,7 @@
   ],
   "inner_ids": [],
   "jp": "かなえて　ゆくから…",
-  "en": "dreams come true, so...",
+  "en": "Dreams come true, so...",
   "notes": "",
   "box": "lyric"
  },
@@ -1597,7 +1597,7 @@
   ],
   "inner_ids": [],
   "jp": "まるで　おりがみ",
-  "en": "just like origami",
+  "en": "Just like origami",
   "notes": "",
   "box": "lyric"
  },
@@ -1608,7 +1608,7 @@
   ],
   "inner_ids": [],
   "jp": "ないで　かぜに　まかせて",
-  "en": "Don't cry, let the wind carry you",
+  "en": "Calm seas, carried by the wind",
   "notes": "",
   "box": "lyric"
  },
@@ -1674,7 +1674,7 @@
   ],
   "inner_ids": [],
   "jp": "ホントのふたりを",
-  "en": "in the real us two",
+  "en": "In who we really are",
   "notes": "",
   "box": "lyric"
  },
@@ -1685,7 +1685,7 @@
   ],
   "inner_ids": [],
   "jp": "たしかめて",
-  "en": "let me be sure",
+  "en": "Let me be sure",
   "notes": "",
   "box": "lyric"
  },
@@ -1740,7 +1740,7 @@
   ],
   "inner_ids": [],
   "jp": "つよい　ゆうきに",
-  "en": "into strong courage",
+  "en": "Into strong courage",
   "notes": "",
   "box": "lyric"
  },
@@ -1751,7 +1751,7 @@
   ],
   "inner_ids": [],
   "jp": "かわっていくよ　ずっと",
-  "en": "are changing, now and always",
+  "en": "Will keep on changing, always",
   "notes": "",
   "box": "lyric"
  },
@@ -1762,7 +1762,7 @@
   ],
   "inner_ids": [],
   "jp": "すき　と　いえる",
-  "en": "so I can say I love you",
+  "en": "So I can say I love you",
   "notes": "",
   "box": "lyric"
  },
@@ -1828,7 +1828,7 @@
   ],
   "inner_ids": [],
   "jp": "なつかしい　うた",
-  "en": "dear and familiar song",
+  "en": "Dear and familiar song",
   "notes": "",
   "box": "lyric"
  },
@@ -1872,7 +1872,7 @@
   ],
   "inner_ids": [],
   "jp": "ぬける　ちかみち",
-  "en": "there's a shortcut through",
+  "en": "There's a shortcut through",
   "notes": "",
   "box": "lyric"
  },
@@ -1949,7 +1949,7 @@
   ],
   "inner_ids": [],
   "jp": "たびだつ　ひがきても",
-  "en": "must set out from this place",
+  "en": "Must set out from this place",
   "notes": "",
   "box": "lyric"
  },
@@ -2037,7 +2037,7 @@
   ],
   "inner_ids": [],
   "jp": "たびだつ　ひがきても",
-  "en": "must set out from this place",
+  "en": "Must set out from this place",
   "notes": "",
   "box": "lyric"
  },
@@ -2092,7 +2092,7 @@
   ],
   "inner_ids": [],
   "jp": "きっとかわってく",
-  "en": "will surely start to change",
+  "en": "Will surely start to change",
   "notes": "",
   "box": "lyric"
  },
@@ -2136,7 +2136,7 @@
   ],
   "inner_ids": [],
   "jp": "ぜったい",
-  "en": "No matter what",
+  "en": "For sure,",
   "notes": "",
   "box": "lyric"
  },
@@ -2147,7 +2147,7 @@
   ],
   "inner_ids": [],
   "jp": "ゆめが　はじまる",
-  "en": "our dream begins",
+  "en": "Our dream begins",
   "notes": "",
   "box": "lyric"
  },
@@ -2290,7 +2290,7 @@
   ],
   "inner_ids": [],
   "jp": "はじけてとびちる",
-  "en": "it bursts and scatters",
+  "en": "It bursts and scatters",
   "notes": "",
   "box": "lyric"
  },
@@ -2323,7 +2323,7 @@
   ],
   "inner_ids": [],
   "jp": "ちいさく　もえてる",
-  "en": "a little fire is burning",
+  "en": "A little fire is burning",
   "notes": "",
   "box": "lyric"
  },
@@ -2345,7 +2345,7 @@
   ],
   "inner_ids": [],
   "jp": "はじめてなのよ",
-  "en": "is new to me",
+  "en": "Is new to me",
   "notes": "",
   "box": "lyric"
  },
@@ -2389,7 +2389,7 @@
   ],
   "inner_ids": [],
   "jp": "すきにならずに　いれない",
-  "en": "I can't help falling for you",
+  "en": "I can't help falling in love",
   "notes": "",
   "box": "lyric"
  },
@@ -2411,7 +2411,7 @@
   ],
   "inner_ids": [],
   "jp": "うみにおよぐサンゴの",
-  "en": "sea's swimming coral",
+  "en": "Sea where the coral sways",
   "notes": "",
   "box": "lyric"
  },
@@ -2422,7 +2422,7 @@
   ],
   "inner_ids": [],
   "jp": "ヒミツ　つげる",
-  "en": "tells a secret",
+  "en": "I tell a secret",
   "notes": "",
   "box": "lyric"
  },
@@ -2455,7 +2455,7 @@
   ],
   "inner_ids": [],
   "jp": "もっと　うたいつづける",
-  "en": "will keep on singing more",
+  "en": "Will keep singing even more",
   "notes": "",
   "box": "lyric"
  },
@@ -2477,7 +2477,7 @@
   ],
   "inner_ids": [],
   "jp": "ときめきをあげる",
-  "en": "I'll give you this flutter",
+  "en": "I'll give you this thrill",
   "notes": "",
   "box": "lyric"
  },
@@ -2499,7 +2499,7 @@
   ],
   "inner_ids": [],
   "jp": "うみにおよぐサンゴの",
-  "en": "sea's swimming coral",
+  "en": "Sea where the coral sways",
   "notes": "",
   "box": "lyric"
  },
@@ -2510,7 +2510,7 @@
   ],
   "inner_ids": [],
   "jp": "ヒミツ　つげる",
-  "en": "tells a secret",
+  "en": "I tell a secret",
   "notes": "",
   "box": "lyric"
  },
@@ -2543,7 +2543,7 @@
   ],
   "inner_ids": [],
   "jp": "もっと　うたいつづける",
-  "en": "will keep on singing more",
+  "en": "Will keep singing even more",
   "notes": "",
   "box": "lyric"
  },
@@ -2565,7 +2565,7 @@
   ],
   "inner_ids": [],
   "jp": "ときめきをあげる",
-  "en": "I'll give you this flutter",
+  "en": "I'll give you this thrill",
   "notes": "",
   "box": "lyric"
  },
@@ -2631,7 +2631,7 @@
   ],
   "inner_ids": [],
   "jp": "このむねに　きざむ",
-  "en": "and carve it in my heart",
+  "en": "And carve it in my heart",
   "notes": "",
   "box": "lyric"
  },
@@ -2653,7 +2653,7 @@
   ],
   "inner_ids": [],
   "jp": "なによりも　つよく",
-  "en": "is stronger than anything",
+  "en": "Is stronger than anything",
   "notes": "",
   "box": "lyric"
  },
@@ -2686,7 +2686,7 @@
   ],
   "inner_ids": [],
   "jp": "7つのうみ　めぐり",
-  "en": "sails around the seven seas",
+  "en": "Sails around the seven seas",
   "notes": "",
   "box": "lyric"
  },
@@ -2697,7 +2697,7 @@
   ],
   "inner_ids": [],
   "jp": "とうめいなあいを　いぬく",
-  "en": "and pierces a crystal-clear love",
+  "en": "And pierces a crystal-clear love",
   "notes": "",
   "box": "lyric"
  },
@@ -2752,7 +2752,7 @@
   ],
   "inner_ids": [],
   "jp": "まもりたい　あいだけを",
-  "en": "to protect only this love",
+  "en": "To protect only this love",
   "notes": "",
   "box": "lyric"
  },
@@ -2785,7 +2785,7 @@
   ],
   "inner_ids": [],
   "jp": "7つのうみ　めぐり",
-  "en": "sails around the seven seas",
+  "en": "Sails around the seven seas",
   "notes": "",
   "box": "lyric"
  },
@@ -2796,7 +2796,7 @@
   ],
   "inner_ids": [],
   "jp": "とうめいなあいを　いぬく",
-  "en": "and pierces a crystal-clear love",
+  "en": "And pierces a crystal-clear love",
   "notes": "",
   "box": "lyric"
  },
@@ -2851,7 +2851,7 @@
   ],
   "inner_ids": [],
   "jp": "まもりたい　あいだけを",
-  "en": "to protect only this love",
+  "en": "To protect only this love",
   "notes": "",
   "box": "lyric"
  },
@@ -2884,7 +2884,7 @@
   ],
   "inner_ids": [],
   "jp": "ベビー・ブルーの　そらを",
-  "en": "As I gaze up at",
+  "en": "The baby-blue sky",
   "notes": "",
   "box": "lyric"
  },
@@ -2895,7 +2895,7 @@
   ],
   "inner_ids": [],
   "jp": "みつめてたら",
-  "en": "The baby-blue sky",
+  "en": "That I gaze up at",
   "notes": "",
   "box": "lyric"
  },
@@ -3203,7 +3203,7 @@
   ],
   "inner_ids": [],
   "jp": "なみだの　ゆくえは",
-  "en": "Where did the tears go?",
+  "en": "The tears' final fate:",
   "notes": "",
   "box": "lyric"
  },
@@ -3291,7 +3291,7 @@
   ],
   "inner_ids": [],
   "jp": "うまれかわる",
-  "en": "If a morning comes",
+  "en": "Born anew",
   "notes": "",
   "box": "lyric"
  },
@@ -3302,7 +3302,7 @@
   ],
   "inner_ids": [],
   "jp": "あさが　くるなら",
-  "en": "When I'm born again",
+  "en": "If that morning comes",
   "notes": "",
   "box": "lyric"
  },
@@ -3313,7 +3313,7 @@
   ],
   "inner_ids": [],
   "jp": "おなじ　いのちを",
-  "en": "I want to live",
+  "en": "This same life",
   "notes": "",
   "box": "lyric"
  },
@@ -3324,7 +3324,7 @@
   ],
   "inner_ids": [],
   "jp": "また　いきたい",
-  "en": "The same life once more",
+  "en": "I want to live again",
   "notes": "",
   "box": "lyric"
  },
@@ -3588,7 +3588,7 @@
   ],
   "inner_ids": [],
   "jp": "オ　パキャマラド",
-  "en": "Oh, pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3599,7 +3599,7 @@
   ],
   "inner_ids": [],
   "jp": "パキャマラド",
-  "en": "Pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3621,7 +3621,7 @@
   ],
   "inner_ids": [],
   "jp": "オ　パキャマラド　",
-  "en": "Oh, pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3632,7 +3632,7 @@
   ],
   "inner_ids": [],
   "jp": "パキャマラド",
-  "en": "Pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3731,7 +3731,7 @@
   ],
   "inner_ids": [],
   "jp": "オ　パキャマラド",
-  "en": "Oh, pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3742,7 +3742,7 @@
   ],
   "inner_ids": [],
   "jp": "パキャマラド",
-  "en": "Pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3764,7 +3764,7 @@
   ],
   "inner_ids": [],
   "jp": "オ　パキャマラド",
-  "en": "Oh, pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },
@@ -3775,7 +3775,7 @@
   ],
   "inner_ids": [],
   "jp": "パキャマラド",
-  "en": "Pas camarade",
+  "en": "Au pas, camarade",
   "notes": "",
   "box": "lyric"
  },

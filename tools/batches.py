@@ -44,6 +44,8 @@ def boxes():
         o = off(e)
         if e["id"] in DATA:
             e["box"] = "data"
+        elif e["id"] in ("t0215", "t021B", "t0220", "t0228"):
+            e["box"] = "leftover"  # Hunter x Hunter Nen types left in the engine; no screen found that shows them
         elif 0x04CE <= o < 0x0A02:
             e["box"] = "credits"
         elif o >= 0x0B1A and e["id"] != "t0B5C":
@@ -160,8 +162,30 @@ def pairs(name, path):
             f.write(f">> {e['id']} | {to_tsv(e['jp'])}\n   EN: {to_tsv(e.get('en', ''))}\n\n")
 
 
+def patch(path):
+    """Apply a fix TSV (id<TAB>EN, any ids) after linting each entry; lyric lines get a capital first letter."""
+    ents = load()
+    idx = {e["id"]: e for e in ents}
+    bad = 0
+    for line in open(path, encoding="utf-8-sig"):
+        if not line.strip():
+            continue
+        i, en = line.rstrip("\n").split("\t")
+        e = dict(idx[i]); e["en"] = from_tsv(en)
+        if font_en.lint([e]) or sorted(CTL.findall(e["en"])) != sorted(CTL.findall(e["jp"])):
+            print("rejected", i); bad += 1; continue
+        idx[i]["en"] = e["en"]
+    for e in ents:  # ruling: every karaoke line is shown alone, so it starts with a capital
+        if e.get("box") == "lyric" and e.get("en"):
+            e["en"] = "\n".join(l[:1].upper() + l[1:] for l in e["en"].split("\n"))
+    save(ents)
+    sys.exit(1 if bad else 0)
+
+
 if __name__ == "__main__":
     c = sys.argv[1]
+    if c == "patch":
+        patch(sys.argv[2])
     if c == "boxes":
         boxes()
     elif c == "split":

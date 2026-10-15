@@ -2,5 +2,6 @@
  "lyric":   {"px": 168, "lines": 1, "note": "karaoke bar on the play screen, BG0 row 18, x 8..176 (measured with the marker build)"},
  "fit":     {"px": 0,   "note": "per line: English px <= the Japanese line px (12 px per glyph, 8 px after FD 01)"},
  "credits": {"px": 232, "note": "staff roll, full screen width minus margins"},
+ "leftover": {"px": 120, "note": "engine leftovers with no known screen (Nen types)"},
  "data":    {"px": 0,   "note": "not translated as text (character tables / debug test strings)"}
 }
