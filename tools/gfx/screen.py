@@ -76,6 +76,55 @@ def obj_layer(d, area=None):
     return idx, pal, src
 
 
+def edit_bg(dump, sheet, bg, first_tile, rect, draw, view=None, skip_blank=True):
+    """Screen-space edit of a linear BG tile resource (4bpp text BG `bg`).
+    first_tile: BG tile number of the sheet's tile 0 (relative to the BG's char base).
+    Pixels are written back wherever the tilemap shows a tile of this resource (flips handled); empty tiles
+    are left out (shared blank tile), so new text must stay inside originally inked tiles."""
+    io = dump.io
+    cnt = struct.unpack_from("<H", io, 8 + 2 * bg)[0]
+    hofs = struct.unpack_from("<H", io, 0x10 + 4 * bg)[0] & 511
+    vofs = struct.unpack_from("<H", io, 0x12 + 4 * bg)[0] & 511
+    mapb = ((cnt >> 8) & 31) * 0x800
+    size = cnt >> 14
+    mw, mh = (256, 512, 256, 512)[size], (256, 256, 512, 512)[size]
+    H, W = sheet.shape
+    ntiles = (H // 8) * (W // 8)
+    x0, y0, x1, y1 = rect
+    cov = np.zeros((y1 - y0, x1 - x0), bool)
+    canvas = np.zeros((y1 - y0, x1 - x0), np.int16) - 1
+    where = {}
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            mx, my = (x + hofs) % mw, (y + vofs) % mh
+            blk = (mx // 256) + (my // 256) * (2 if mw == 512 else 1)
+            e = struct.unpack_from("<H", dump.vram, mapb + blk * 0x800 + ((my % 256) // 8 * 32 + (mx % 256) // 8) * 2)[0]
+            t = (e & 1023) - first_tile
+            if not 0 <= t < ntiles or (skip_blank and not sheet[(t // (W // 8)) * 8:(t // (W // 8)) * 8 + 8,
+                                                                  (t % (W // 8)) * 8:(t % (W // 8)) * 8 + 8].any()):
+                continue
+            px, py = mx % 8, my % 8
+            if e & 0x400: px = 7 - px
+            if e & 0x800: py = 7 - py
+            sx, sy = (t % (W // 8)) * 8 + px, (t // (W // 8)) * 8 + py
+            cov[y - y0, x - x0] = True
+            canvas[y - y0, x - x0] = sheet[sy, sx]
+            where[(y, x)] = (sy, sx)
+    if view:
+        from PIL import Image
+        im = Image.new("RGB", (x1 - x0, y1 - y0), (255, 0, 255))
+        for y in range(y1 - y0):
+            for x in range(x1 - x0):
+                if cov[y, x]:
+                    v = canvas[y, x]
+                    im.putpixel((x, y), (v * 17,) * 3)
+        im.resize((im.width * 4, im.height * 4), Image.NEAREST).save(view)
+    draw(canvas, cov)
+    for (y, x), (sy, sx) in where.items():
+        sheet[sy, sx] = canvas[y - y0, x - x0]
+    return sheet
+
+
 def edit_obj(dump, sheet, origin, rect, draw, view=None):
     """Screen-space edit of an OBJ resource sheet.
     sheet: resource index sheet (res.to_sheet); origin: (tile x, tile y) of the sheet's top-left in OBJ VRAM;

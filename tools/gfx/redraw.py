@@ -338,7 +338,105 @@ def r_007():
     save(sh, B0, 7)
 
 
-ALL = {"027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007}
+def relabel(sh, x, y, w, h, fill, text_ix, label, ink=15, ring=None, bold=True, dy=0):
+    """Bubble button in a 64x32-ish cell: erase pixels in text_ix inside the inner box, draw label centred."""
+    box = sh[y + 5:y + h - 5, x + 6:x + w - 6]
+    box[np.isin(box, list(text_ix))] = fill
+    m = P.trim_rows(P.render(label, bold=bold and P.width(label, bold=True) <= w - 14))
+    cx, cy = x + (w - m.shape[1]) // 2, y + (h - m.shape[0]) // 2 + dy
+    P._put(sh, cx - 1, cy - 1, P.dilate(m, 1, True), ring if ring is not None else fill + 1)
+    P._put(sh, cx, cy, m, ink)
+
+
+# ---------------------------------------------------------------- difficulty (#58, OBJ origin 16,8)
+def r_058():
+    import screen
+    sh = load(B0, 58)
+    for (x, y, fill, lab) in ((0, 0, 11, "Easy"), (64, 0, 8, "Normal"), (0, 32, 5, "Hard"),
+                              (0, 64, 8, "Usual"), (64, 64, 5, "Freestyle")):
+        relabel(sh, x, y, 64, 32, fill, {11: (12, 13, 14, 15), 8: (9, 13, 14, 15), 5: (6, 13, 14, 15)}[fill], lab, dy=-1)
+
+    # top hint "(A)ボタン けってい (B)ボタン もどる": the ボタン tiles are shared, so both get an arrow
+    def draw(c, cov):
+        for x0 in (22, 142):
+            c[:, x0:x0 + 98][c[:, x0:x0 + 98] >= 0] = 0
+        for x in (22, 142):
+            text_at(c, x + 8, 4, "→", 15, 1)
+        text_at(c, 58, 4, "OK", 15, 1, bold=True)   # x 22-53 = x 142-173 (shared sprite)
+        text_at(c, 178, 4, "Back", 15, 1, bold=True)
+    screen.edit_obj(dump("difficulty2"), sh, (16, 8), (0, 0, 240, 18), draw)
+    save(sh, B0, 58)
+
+
+# ---------------------------------------------------------------- post-song buttons (#119, 64x32 cells)
+def r_119():
+    sh = load(B0, 119)
+    for (x, y, lab) in ((0, 0, "Back"), (64, 0, "Back"), (128, 0, "Watch"), (192, 0, "Watch"),
+                        (0, 32, "Save"), (64, 32, "Save"), (128, 32, "Save"), (192, 32, "Save")):
+        dark = x in (64, 192)
+        fill = 3 if dark else 9
+        relabel(sh, x, y, 64, 32, fill, (4, 5, 6) if dark else (10, 11, 12, 13, 14, 15), lab,
+                ink=6 if dark else 15, ring=4 if dark else 13)
+    save(sh, B0, 119)
+
+
+# ---------------------------------------------------------------- results screen BG2 (#40, linear, tile 0 = BG tile 0)
+# (clear rect, text, x, y, ink, ring, bold); digits (x 72-91) are shared glyph tiles and stay untouched
+RESULT_TEXT = [((17, 8, 41, 24), "Song", 17, 11, 13, 8, False),
+               ((9, 32, 41, 48), "Dance", 10, 36, 13, 8, False),
+               ((92, 8, 112, 24), "pts", 93, 12, 13, 8, True),
+               ((92, 32, 112, 48), "pts", 93, 36, 13, 8, True),
+               ((6, 136, 90, 152), "Best Score", 8, 140, 15, 8, True),
+               ((138, 134, 160, 152), "pts", 140, 140, 15, 8, True)]
+# badges: (inner rect, fill, text indices, label)
+RESULT_BADGES = [((124, 9, 168, 25), 11, (12, 13, 14, 15), "Easy"),
+                 ((130, 31, 172, 50), 8, (9, 13, 14, 15), "Usual")]
+
+
+def r_040():
+    import screen
+    sh = load(B0, 40)
+
+    def draw(c, cov):
+        for (x0, y0, x1, y1), text, x, y, ink, ring, bold in RESULT_TEXT:
+            blk = c[y0:y1, x0:x1]
+            blk[blk >= 0] = 0
+            m = P.trim_rows(P.render(text, bold=bold))
+            k = cov.copy()
+            P._put(c, x - 1, y - 1, P.dilate(m, 1, True), ring)
+            P._put(c, x, y, m, ink)
+            c[~k] = -1
+        for (x0, y0, x1, y1), fill, tix, text in RESULT_BADGES:
+            blk = c[y0:y1, x0:x1]
+            blk[np.isin(blk, tix)] = fill
+            m = P.trim_rows(P.render(text, bold=True))
+            x, y = (x0 + x1 - m.shape[1]) // 2, (y0 + y1 - m.shape[0]) // 2
+            P._put(c, x - 1, y - 1, P.dilate(m, 1, True), fill + 1)
+            P._put(c, x, y, m, 15)
+    screen.edit_bg(dump("results"), sh, 2, 0, (0, 0, 240, 160), draw)
+    save(sh, B0, 40)
+
+
+# ---------------------------------------------------------------- results total unit (#41 OBJ origin 0,24): big てん
+def r_041():
+    import screen
+    sh = load(B0, 41)
+    m = ttf_mask("pts", 22, thresh=110)
+
+    def draw(c, cov):
+        c[cov] = 0
+        h, w = m.shape
+        x, y = 4 + (32 - w) // 2, 26 - h
+        P._put(c, x - 2, y - 2, P.dilate(m, 2, True), 8)
+        P._put(c, x - 1, y - 1, P.dilate(m, 1, True), 11)
+        P._put(c, x, y, m, 15)
+        c[~cov] = -1
+    screen.edit_obj(dump("results"), sh, (0, 24), (132, 80, 176, 112), draw)
+    save(sh, B0, 41)
+
+
+ALL = {"041": r_041, "027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007,
+       "058": r_058, "119": r_119, "040": r_040}
 ALL.update({f"{i:03d}": r_bar(i) for i in BARS})
 
 if __name__ == "__main__":
