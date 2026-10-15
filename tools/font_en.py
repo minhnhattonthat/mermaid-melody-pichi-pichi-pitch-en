@@ -148,6 +148,21 @@ def name_entry(rom):
         ch = jp.get(c)
         if ch in m:
             struct.pack_into("<H", rom, NUMTAB + 2 * i, CODE[m[ch]])
+    # glyph code -> char id table (0xD7F1CD, one byte per code): the Hippo song editor converts text (t0B1A,
+    # the default song) into char ids with it. Ids index 10-byte records at 0xECE1F7 whose byte 0 is the NUMTAB slot.
+    CHARID, RECS = 0xD7F1CD, 0xECE1F7
+    tab = bytearray(0x1B5)
+    for cid in range(97, 0, -1):  # ids 1-97 are the grid characters (72+ voiced forms); lowest id wins
+        slot = rom[RECS + cid * 10]
+        if slot < 22 or slot > 0x70:
+            continue
+        for page in (0x5B, 0):  # lowercase page first so the uppercase (page 1) id wins
+            code = struct.unpack_from("<H", rom, NUMTAB + 2 * (slot + page))[0]
+            if code < 0x1B5 and code:
+                tab[code] = cid
+    for d in range(10):  # digits keep ids 160-169 as in the original table
+        tab[CODE[str(d)]] = 160 + d
+    rom[CHARID:CHARID + 0x1B5] = tab
 
 
 def lint(ents):
