@@ -20,5 +20,14 @@ Batch brief: H:\translation\batch\projects\BATCH_BRIEF.md (all rulings pre-appro
 - Credits English. All graphics text in scope. Full words, no abbreviations unless flagged.
 - glossary.md must stay reusable by the sequel (Pichi Pichi Party, sibling repo).
 
+## Pipeline
+- Text bank (lyrics/UI/credits): tools/textcodec.py (format), tools/textins.py (dump/identity/insert), script/text.json,
+  tbl/jp.tbl (glyph table, OCR'd by eye + song-credit research). English: tools/font_glyphs.py + font_en.py + vwf.py
+  (VWF hook on 0x080174BC, advance patch 0x08017D16). Batches: tools/batches.py (split/check/merge/pairs), work/tl/.
+- Graphics: tools/gfx/apply.py (owned by the graphics workstream), gfx/orig + gfx/en PNGs, docs/re/graphics.md.
+- Debug menu: poke state 0x0001 into 0x03001E00 from the main menu (tools/debug/state.lua); states in work/states/.
+
 ## Status
-- Done: Step 0 (emulator, hooks), codec (tools/mmcomp.py), bank scan. Next: catalogue all text graphics (phase 1 survey). Open bugs: none.
+- Done: phases 1-5 for text (identity build green, VWF marker build shows lyrics). Running: translator batches
+  b01-b04, graphics survey/redraw. Next: merge+review, name entry (Latin grid, NUMTAB 0xD7F384), other font users
+  (0x08003B8C renderer), QA routes, release. Open bugs: none.
