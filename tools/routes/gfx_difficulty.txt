@@ -1,0 +1,16 @@
+# song select -> A -> difficulty
+1300 -
+20 start
+300 -
+20 start
+200 -
+20 start
+250 -
+6 a
+200 -
+6 a
+250 -
+6 a
+150 -
+6 a
+150 -
