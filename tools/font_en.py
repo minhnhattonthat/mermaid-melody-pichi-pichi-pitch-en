@@ -109,7 +109,39 @@ def install(rom, alloc):
     # digits for number printing (FB) / name table head
     for d in range(10):
         struct.pack_into("<H", rom, NUMTAB + 2 * d, CODE[str(d)])
+    name_entry(rom)
     vwf.install(rom, alloc, wt)
+
+
+# Name entry: the grid is a graphic (gfx workstream draws this layout); NUMTAB index -> code via the kana it held.
+_GRID = {"あいうえお": "ABCDE", "たちつてと": "FGHIJ", "まみむめも": "KLMNO", "わをん": "PQR",
+         "かきくけこ": "STUVW", "なにぬねの": "XYZ.,", "やゆよー": "!?-'", "ぁぃぅぇぉ": "01234",
+         "さしすせそ": "56789", "はひふへほ": "&()/:", "らりるれろ": "~+=#*", "っゃゅょ": "♪♥★%"}
+_VOICED = dict(zip("がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽゔ", "かきくけこさしすせそたちつてとはひふへほはひふへほう"))
+
+
+def _kata(s):
+    return "".join(chr(ord(c) + 0x60) if "ぁ" <= c <= "ゖ" else c for c in s)
+
+
+def name_entry(rom):
+    import textins
+    jp = textins.load_tbl("jp.tbl")
+    m = {}
+    for k, v in _GRID.items():
+        for a, b in zip(k, v):
+            m[a] = b
+            m[_kata(a)] = b.lower()
+    for a, b in _VOICED.items():
+        if b in m:
+            m[a] = m[b]; m[_kata(a)] = m[_kata(b)]
+    for i in range(10, 0x100):
+        c = struct.unpack_from("<H", rom, NUMTAB + 2 * i)[0]
+        if c >= 0xFFFF or c > 0x1B4:
+            break
+        ch = jp.get(c)
+        if ch in m:
+            struct.pack_into("<H", rom, NUMTAB + 2 * i, CODE[m[ch]])
 
 
 def lint(ents):
