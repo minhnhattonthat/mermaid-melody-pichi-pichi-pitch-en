@@ -221,6 +221,9 @@ def lint(lang="en"):
         print("lint: no font_en yet; checked jp only")
         return 1 if errs else 0
     errs += font_en.lint(ents)
+    for e in ents:  # untranslated glyph text would print as English-font garbage
+        if not e.get("en") and re.sub(r"\[[^\]]*\]|\{@\}|\{[A-Z]\}|\s|　", "", e["jp"]):
+            print(e["id"], "has text but no English"); errs += 1
     print("lint errors:", errs)
     return 1 if errs else 0
 
