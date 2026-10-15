@@ -128,15 +128,33 @@ def lint(ents):
             print(e["id"], "Japanese left in en"); errs += 1
         if en.count("{@}") != e["jp"].count("{@}") or en.count("@]") != e["jp"].count("@]"):
             print(e["id"], "label/jump count differs from jp"); errs += 1
-        box = e.get("box") or "default"
+        box = e.get("box") or "fit"
         b = budgets.get(box)
         if b:
-            for w in line_widths(en):
-                if w > b["px"]:
-                    print(e["id"], f"line {w}px > {b['px']}px ({box})"); errs += 1
+            lim = jp_line_px(e["jp"]) if box == "fit" else None
+            for i, w in enumerate(line_widths(en)):
+                cap = (lim[i] if i < len(lim) else 0) if lim is not None else b["px"]
+                if cap and w > cap:
+                    print(e["id"], f"line {i + 1}: {w}px > {cap}px ({box})"); errs += 1
             if b.get("lines") and en.count("\n") + 1 > b["lines"]:
                 print(e["id"], f"{en.count(chr(10)) + 1} lines > {b['lines']} ({box})"); errs += 1
     return errs
+
+
+def jp_line_px(jp):
+    """Original pixel width per line: 12 px per glyph, 8 px while FD 01 (half-width mode) is active."""
+    ws, w, step = [], 0, 12
+    for t in TOKEN.findall(jp):
+        if t == "\n":
+            ws.append(w); w = 0
+        elif t.startswith("[FD "):
+            step = 8 if int(t[4:6], 16) & 3 else 12
+        elif t.startswith("[") or t == "{@}":
+            continue
+        else:
+            w += step
+    ws.append(w)
+    return ws
 
 
 def load_budgets():

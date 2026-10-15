@@ -5,7 +5,8 @@
   "inner_ids": [],
   "jp": "コナミ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0004",
@@ -13,7 +14,8 @@
   "inner_ids": [],
   "jp": "作詞　　　その1作詞　　　その2作詞　　　その3作詞　　　その4",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0025",
@@ -24,7 +26,8 @@
   "inner_ids": [],
   "jp": "",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0026",
@@ -34,7 +37,8 @@
   "inner_ids": [],
   "jp": "[FA 04]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0029",
@@ -44,7 +48,8 @@
   "inner_ids": [],
   "jp": "[FA 03]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t002C",
@@ -54,7 +59,8 @@
   "inner_ids": [],
   "jp": "[FA 09][FA 04][FA 0A]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0033",
@@ -62,9 +68,10 @@
    4
   ],
   "inner_ids": [],
-  "jp": "[FD 01][FA 11 01][FA 08 @][FC 00 00]{@}　歌　　　　　　　　内田　　　　　　　SE\n　歌選択　　　　　　ライブ　　　　　　BGM\n　モード選択　　　　川原\n　曲作り　　　　　　　　　　　　　　　Option\n　　　　　　　　　　　　　　　　　　　道優\n　　　　　　　　　　　　　　　　　　　\n　当りチェック　　　　　　　　　　　　SRAM消去\n　止め絵チェック　　　　　　　　　　　EXIT",
+  "jp": "[FD 01][FA 11 01][FA 08 @][FC 00 00]{@}　歌　　　　　　　　内田　　　　　　　SE\n　歌選択　　　　　　ライブ　　　　　　BGM\n　モード選択　　　　川原\n　曲作り　　　　　　　　　　　　　　　Option\n　　　　　　　　　　　　　　　　　　　道信\n　　　　　　　　　　　　　　　　　　　\n　当りチェック　　　　　　　　　　　　SRAM消去\n　止め絵チェック　　　　　　　　　　　EXIT",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t00FC",
@@ -72,7 +79,8 @@
   "inner_ids": [],
   "jp": "　スタッフ　　　　　　　　　　　　　　\n　名前入力　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　\n　　　　　　　　　　　　　　　　　　　",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t019D",
@@ -84,7 +92,8 @@
   "inner_ids": [],
   "jp": "セーブデータの一部が壊れています",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01B0",
@@ -94,7 +103,8 @@
   "inner_ids": [],
   "jp": "セーブデータが壊れています　TT",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01C1",
@@ -105,7 +115,8 @@
   "inner_ids": [],
   "jp": "ねーちゃん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01C7",
@@ -115,7 +126,8 @@
   "inner_ids": [],
   "jp": "にーちゃん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01CD",
@@ -125,7 +137,8 @@
   "inner_ids": [],
   "jp": "[F6 01]ちゃん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01D3",
@@ -135,7 +148,8 @@
   "inner_ids": [],
   "jp": "[F6 01]くん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t01D8",
@@ -147,7 +161,8 @@
   ],
   "jp": "[FA 0C 00 08]【[FA 0F 40][F6 02][F9 @]{@}[FA 0C 00 08]【[FA 0F 40][F6 00]{@}[FA 10 40]】\n[FA 0C 00 88]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t01FA",
@@ -157,7 +172,8 @@
   "inner_ids": [],
   "jp": "[FD 01][FB E0 36 00 03 C6]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0203",
@@ -167,7 +183,8 @@
   "inner_ids": [],
   "jp": "[FB E0 36 00 03 83]点\n[FB E4 36 00 03 83]点",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0215",
@@ -177,7 +194,8 @@
   "inner_ids": [],
   "jp": "変化系",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t021B",
@@ -187,7 +205,8 @@
   "inner_ids": [],
   "jp": "操作系",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0220",
@@ -197,7 +216,8 @@
   "inner_ids": [],
   "jp": "具現化系",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0228",
@@ -207,7 +227,8 @@
   "inner_ids": [],
   "jp": "特質系",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t022E",
@@ -218,7 +239,8 @@
   "inner_ids": [],
   "jp": "[FA 05 8C 40][FC 82]セーブする\n[FC 82]あそぶ!\n[FC 82]うたをきく\n[FC 82]もどる[FA 05 FF]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0252",
@@ -228,7 +250,8 @@
   "inner_ids": [],
   "jp": "",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0253",
@@ -238,7 +261,8 @@
   "inner_ids": [],
   "jp": "[FB E0 36 00 03 85][FC 83][F6 0A]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t025E",
@@ -251,7 +275,8 @@
   "inner_ids": [],
   "jp": "　名前を決めてください",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t026B",
@@ -261,7 +286,8 @@
   "inner_ids": [],
   "jp": "名前に空白は使えません!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t027B",
@@ -271,7 +297,8 @@
   "inner_ids": [],
   "jp": "[FC 4C]名前[FA 11 04][FC 4C]性別[FA 11 04][FC 44]誕生日　　[FB E0 36 00 03 C2]月[FB E4 36 00 03 C2]日[FA 11 04][FC 4C]終了",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t02AF",
@@ -281,7 +308,8 @@
   "inner_ids": [],
   "jp": "　　　　すこし、まっててね",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t02BD",
@@ -291,7 +319,8 @@
   "inner_ids": [],
   "jp": "　つうしんせつぞくをしらべています",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t02CF",
@@ -301,7 +330,8 @@
   "inner_ids": [],
   "jp": "つうしんせつぞくができませんでした",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t02E1",
@@ -311,7 +341,8 @@
   "inner_ids": [],
   "jp": "ほかのひとがキャラをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t02F3",
@@ -321,7 +352,8 @@
   "inner_ids": [],
   "jp": "【るちあ】がうたをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0304",
@@ -331,7 +363,8 @@
   "inner_ids": [],
   "jp": "【はのん】がうたをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0315",
@@ -341,7 +374,8 @@
   "inner_ids": [],
   "jp": "　【リナ】がうたをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0326",
@@ -351,7 +385,8 @@
   "inner_ids": [],
   "jp": "　　つうしんあいてがいません!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0336",
@@ -361,7 +396,8 @@
   "inner_ids": [],
   "jp": "　つうしんあいてがかわっています!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0348",
@@ -371,7 +407,8 @@
   "inner_ids": [],
   "jp": "うたをえらんでください",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0354",
@@ -381,7 +418,8 @@
   "inner_ids": [],
   "jp": "レベルをえらんでください",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0361",
@@ -391,7 +429,8 @@
   "inner_ids": [],
   "jp": "【るちあ】がレベルをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0373",
@@ -401,7 +440,8 @@
   "inner_ids": [],
   "jp": "【はのん】がレベルをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0385",
@@ -411,7 +451,8 @@
   "inner_ids": [],
   "jp": "　【リナ】がレベルをえらんでいます",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t0397",
@@ -423,7 +464,8 @@
   "inner_ids": [],
   "jp": "つうしんでいじょうが\nはっけんされました",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t03AC",
@@ -433,7 +475,8 @@
   "inner_ids": [],
   "jp": "　つうしんに\n　　しっぱいしました!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t03BF",
@@ -443,7 +486,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　ちょっとまっててね!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t03CE",
@@ -465,7 +509,8 @@
   "inner_ids": [],
   "jp": "私は親機　ID　[FB E0 36 00 03 01]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t03DF",
@@ -475,7 +520,8 @@
   "inner_ids": [],
   "jp": "私は子機　ID　[FB E0 36 00 03 01]",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "fit"
  },
  {
   "id": "t03EF",
@@ -498,7 +544,8 @@
   "inner_ids": [],
   "jp": "123456789012345678\n2あああああああああああああああああ\n3いいいいいいいいいいいいいいいいい\n4ううううううううううううううううう\n5えええええええええええええええええ\n6おおおおおおおおおおおおおおおおお\n7かかかかかかかかかかかかかかかかか\n[FD 03]　あいうえお　たちつてと　まみむめも　わをん、。\n\n　かきくけこ　なにぬねの　や　ゆ　よ　ゃゅょっ－　゜”\n\n　さしすせそ　はひふへほ　らりるれろ　ぁぃぅぇぉ　←→",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t04CE",
@@ -508,7 +555,8 @@
   "inner_ids": [],
   "jp": "　　　　　　　～原作～\n\n[FC 44][FA C9]マーメイドメロディー⇔ぴちぴちピッチ\n[FA 89][FA 11 01]　原案　　　講談社・ウィーヴ\n　まんが　　花森ぴんく\n　シナリオ　横手美智子\n[FA 11 01]　　　　　⇔(講談社　なかよし連載)",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t053C",
@@ -518,7 +566,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　　　　　　～キャスト～\n\n　　七海るちあ　　　　中田　あすみ\n　　宝生波音　　　　　寺門　仁美\n　　洞院リナ　　　　　浅野　まゆみ\n　　堂本海斗　　　　　岸尾　大輔\n　　ヒッポ　　　　　　伊東　みやこ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t05B9",
@@ -528,7 +577,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　　　　　　～スタッフ～\n[FA 11 03]　　【エグゼクティブプロデューサー】\n\n　　　　　　　古沢　幕行\n[FA 11 01]　　　　　　　下村　聴",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0601",
@@ -538,7 +588,8 @@
   "inner_ids": [],
   "jp": "[FA 11 05]　　　　　【プロデューサー】\n\n　　　　　　　下進　陸",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0623",
@@ -548,7 +599,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　　【ディレクター&プランナー】\n\n　　　　　　　渡遊　徹\n[FA 11 03]　　　　【コーディネーター】\n\n　　　　　　　沢村　意明",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0669",
@@ -556,9 +608,10 @@
    85
   ],
   "inner_ids": [],
-  "jp": "[FA 11 01]　　　　　【プログラマー】\n\n　　　　　　　渡遊　徹\n[FA 11 01]　　　　　　　内田　英人\n[FA 11 01]　　　　　　　板倉　願\n[FA 11 01]　　　　　　　川原　淳",
+  "jp": "[FA 11 01]　　　　　【プログラマー】\n\n　　　　　　　渡遊　徹\n[FA 11 01]　　　　　　　内田　英人\n[FA 11 01]　　　　　　　板倉　誠\n[FA 11 01]　　　　　　　川原　淳",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t06BC",
@@ -568,7 +621,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　　　　　　【デザイナー】\n\n　　　　　　　田中　庭家\n[FA 11 01]　　　　　　　富見　利車子\n[FA 11 01]　　　　　　　田中　世争\n[FA 11 01]　　　　　　　吉本　京子",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0716",
@@ -578,7 +632,8 @@
   "inner_ids": [],
   "jp": "[FA 11 05]　　　　　　【デザイン協力】\n\n　　　　　　　小島　不二人",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t073A",
@@ -588,7 +643,8 @@
   "inner_ids": [],
   "jp": "[FA 11 01]　　　　　　　【サウンド】\n[FA 11 03]　　　　　【音楽】　槻沢　麻華\n[FA 11 01]　　　　【効果音】　ARY\n[FA 11 01]　　　⇔【[FD 01]プログラム[FD 00]】　GUN",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t078D",
@@ -598,7 +654,8 @@
   "inner_ids": [],
   "jp": "協力\n　　株式会社講談社なかよし編集部\n　　株式会社ウィーヴ　　　　　　　　[FA 11 04]音楽協力\n　　株式会社ポニーキャニオン　　　　[FA 11 04]音声収録協力\n　　株式会社ザック・プロモーション",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t07EE",
@@ -608,7 +665,8 @@
   "inner_ids": [],
   "jp": "\n[FA 11 03]　　　　　　　～制作～\n\n[FD 01]　(株)コナミコンピュータエンタテインメントジャパン",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t081D",
@@ -617,9 +675,10 @@
    92
   ],
   "inner_ids": [],
-  "jp": "[FA 11 01][FA C9]♪太陽の楽園⇔[FD 01]〜Promised　Land〜\n[FA 89]　　　　作詞：三井ゆきこ　作曲：大内皆地　編曲：大内皆地\n[FD 00][FA C9]♪「大事な宝箱」\n[FA 89][FD 01]　　　　　　作詞：ポリン　作曲：小林優否　編曲：小林優否\n[FD 00][FA C9]♪Legend⇔of⇔Mermaid\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：林　港電　編曲：林　港電\n[FD 00][FA C9]♪恋はなんだろう\n[FA 89][FD 01]　作詞：ゆうき　かな　作曲：永井　ルイ　編曲：永井　ルイ",
+  "jp": "[FA 11 01][FA C9]♪太陽の楽園⇔[FD 01]〜Promised　Land〜\n[FA 89]　　　　作詞：三井ゆきこ　作曲：大内哲也　編曲：大内哲也\n[FD 00][FA C9]♪「大津な宝箱」\n[FA 89][FD 01]　　　　　　作詞：ポリン　作曲：小林信吾　編曲：小林信吾\n[FD 00][FA C9]♪Legend⇔of⇔Mermaid\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：林　浩司　編曲：林　浩司\n[FD 00][FA C9]♪恋はなんだろう\n[FA 89][FD 01]　作詞：ゆうき　かな　作曲：永井　ルイ　編曲：永井　ルイ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0902",
@@ -627,9 +686,10 @@
    93
   ],
   "inner_ids": [],
-  "jp": "[FA C9]♪Splash⇔Dream\n[FA 89][FD 01]　　　　　　作詞：様田皆地　作曲：勝願二　編曲：西曜正己\n[FD 00][FA C9]♪Ever⇔Blue\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：岩田健喜　編曲：佐藤和昭\n[FD 00][FA C9]♪Star⇔Jewel\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：大内皆地　編曲：大内皆地\n[FD 00][FA C9]♪Super⇔Love⇔Songs!\n[FA 89][FD 01]　　　　　作詞：三井ゆきこ　作曲：勝願二　編曲：神争裕之\n　　　　　　　　　　歌：中田あすみ、寺門仁美、浅野まゆみ",
+  "jp": "[FA C9]♪Splash⇔Dream\n[FA 89][FD 01]　　　　　　作詞：福田哲也　作曲：勝誠二　編曲：西嶋正己\n[FD 00][FA C9]♪Ever⇔Blue\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：堀田健志　編曲：佐藤和朗\n[FD 00][FA C9]♪Star⇔Jewel\n[FA 89][FD 01]　　　　作詞：三井ゆきこ　作曲：大内哲也　編曲：大内哲也\n[FD 00][FA C9]♪Super⇔Love⇔Songs!\n[FA 89][FD 01]　　　　　作詞：三井ゆきこ　作曲：勝誠二　編曲：神争裕之\n　　　　　　　　　　歌：中田あすみ、寺門仁美、浅野まゆみ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "credits"
  },
  {
   "id": "t0A02",
@@ -784,7 +844,8 @@
   "inner_ids": [],
   "jp": "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよわをんらりるれろがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽぁぃぅぇぉゃゅょっー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0A59",
@@ -792,7 +853,8 @@
   "inner_ids": [],
   "jp": "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨワヲンラリルレロガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポァィゥェォャュョッーヴ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0AB9",
@@ -800,7 +862,8 @@
   "inner_ids": [],
   "jp": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+－×／&$?",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0B1A",
@@ -818,7 +881,8 @@
   "inner_ids": [],
   "jp": "みんなでうたおう\nヒッポがおどる\nるちあとはのんと\nリナのうただよ\nアハハハハハハハ\nウフフフフフフ\nエヘヘヘヘヘヘヘ\nオホホホホ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0B5C",
@@ -1082,7 +1146,8 @@
   ],
   "jp": "0123456789ABCDEF　－+!?⇔あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんーがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽヴゃゅょっぁぃぅぇぉ。、アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポヴャュョッァィゥェォ×▽①㊧㊦㊤㊥{@}ゲ　ゲ　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "data"
  },
  {
   "id": "t0C46",
@@ -1090,7 +1155,8 @@
   "inner_ids": [],
   "jp": "朝は寝床で　グーグーグー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C56",
@@ -1098,7 +1164,8 @@
   "inner_ids": [],
   "jp": "楽しいな　楽しいな",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C60",
@@ -1106,7 +1173,8 @@
   "inner_ids": [],
   "jp": "おばけにゃ　学校も",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C6C",
@@ -1114,7 +1182,8 @@
   "inner_ids": [],
   "jp": "試験もなんにも　ない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C79",
@@ -1122,7 +1191,8 @@
   "inner_ids": [],
   "jp": "ゲ　ゲ　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C84",
@@ -1130,7 +1200,8 @@
   "inner_ids": [],
   "jp": "みんなで歌おう　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C93",
@@ -1138,7 +1209,8 @@
   "inner_ids": [],
   "jp": "ゲ　ゲ　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0C9E",
@@ -1146,7 +1218,8 @@
   "inner_ids": [],
   "jp": "夜は墓場で　運動会",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CAD",
@@ -1154,7 +1227,8 @@
   "inner_ids": [],
   "jp": "楽しいな　楽しいな",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CB7",
@@ -1162,7 +1236,8 @@
   "inner_ids": [],
   "jp": "おばけは　死なない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CC2",
@@ -1170,7 +1245,8 @@
   "inner_ids": [],
   "jp": "病気もなんにも　ない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CCF",
@@ -1178,7 +1254,8 @@
   "inner_ids": [],
   "jp": "ゲ　ゲ　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CDA",
@@ -1186,7 +1263,8 @@
   "inner_ids": [],
   "jp": "みんなで歌おう　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CE9",
@@ -1194,7 +1272,8 @@
   "inner_ids": [],
   "jp": "みんなで歌おう　ゲゲゲのゲー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0CF8",
@@ -1244,7 +1323,8 @@
   "inner_ids": [],
   "jp": "おおきな　たびにでよう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D04",
@@ -1254,7 +1334,8 @@
   "inner_ids": [],
   "jp": "たいようと　かぜのかなたへ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D12",
@@ -1264,7 +1345,8 @@
   "inner_ids": [],
   "jp": "きっと　ちずにはない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D1D",
@@ -1274,7 +1356,8 @@
   "inner_ids": [],
   "jp": "らくえんの　ドアをひらいて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D2B",
@@ -1284,7 +1367,8 @@
   "inner_ids": [],
   "jp": "このせかいに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D32",
@@ -1294,7 +1378,8 @@
   "inner_ids": [],
   "jp": "キミがうまれた　あさ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D3D",
@@ -1304,7 +1389,8 @@
   "inner_ids": [],
   "jp": "しゅくふくの　かねがなった",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D4B",
@@ -1314,7 +1400,8 @@
   "inner_ids": [],
   "jp": "たったひとつ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D52",
@@ -1324,7 +1411,8 @@
   "inner_ids": [],
   "jp": "たからものを　だいて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D5D",
@@ -1334,7 +1422,8 @@
   "inner_ids": [],
   "jp": "ひとは　うまれてくる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D68",
@@ -1344,7 +1433,8 @@
   "inner_ids": [],
   "jp": "あのひの　きもちを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D72",
@@ -1354,7 +1444,8 @@
   "inner_ids": [],
   "jp": "わすれないで",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D79",
@@ -1364,7 +1455,8 @@
   "inner_ids": [],
   "jp": "ココロに　ながれる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D83",
@@ -1374,7 +1466,8 @@
   "inner_ids": [],
   "jp": "Dear　My　Songs",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D91",
@@ -1384,7 +1477,8 @@
   "inner_ids": [],
   "jp": "ボクらは　たびのとちゅう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0D9E",
@@ -1394,7 +1488,8 @@
   "inner_ids": [],
   "jp": "たいようの　くにをめざして",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DAC",
@@ -1404,7 +1499,8 @@
   "inner_ids": [],
   "jp": "どんな　ちずにもない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DB7",
@@ -1414,7 +1510,8 @@
   "inner_ids": [],
   "jp": "やくそくの　ばしょへ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DC2",
@@ -1424,7 +1521,8 @@
   "inner_ids": [],
   "jp": "ありふれた　ものがたりを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DCF",
@@ -1434,7 +1532,8 @@
   "inner_ids": [],
   "jp": "はてしない　みらいにかえて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DDD",
@@ -1444,7 +1543,8 @@
   "inner_ids": [],
   "jp": "きっと　いろんなゆめ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DE8",
@@ -1454,7 +1554,8 @@
   "inner_ids": [],
   "jp": "かなえて　ゆくから…",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DF3",
@@ -1464,7 +1565,8 @@
   "inner_ids": [],
   "jp": "わらって",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0DF8",
@@ -1474,7 +1576,8 @@
   "inner_ids": [],
   "jp": "なみまを　すべるように",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E04",
@@ -1484,7 +1587,8 @@
   "inner_ids": [],
   "jp": "しろい　ヨット",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E0C",
@@ -1494,7 +1598,8 @@
   "inner_ids": [],
   "jp": "まるで　おりがみ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E15",
@@ -1504,7 +1609,8 @@
   "inner_ids": [],
   "jp": "ないで　かぜに　まかせて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E22",
@@ -1514,7 +1620,8 @@
   "inner_ids": [],
   "jp": "どこへいくの?",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E2A",
@@ -1524,7 +1631,8 @@
   "inner_ids": [],
   "jp": "ちっちゃくなって",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E33",
@@ -1534,7 +1642,8 @@
   "inner_ids": [],
   "jp": "こんなそばにいるのに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E3E",
@@ -1544,7 +1653,8 @@
   "inner_ids": [],
   "jp": "きもちには　さわれない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E4A",
@@ -1554,7 +1664,8 @@
   "inner_ids": [],
   "jp": "しんじさせて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E51",
@@ -1564,7 +1675,8 @@
   "inner_ids": [],
   "jp": "ホントのふたりを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E5A",
@@ -1574,7 +1686,8 @@
   "inner_ids": [],
   "jp": "たしかめて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E60",
@@ -1584,7 +1697,8 @@
   "inner_ids": [],
   "jp": "たからばこのカギ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E69",
@@ -1594,7 +1708,8 @@
   "inner_ids": [],
   "jp": "あけて　あげるよ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E72",
@@ -1604,7 +1719,8 @@
   "inner_ids": [],
   "jp": "スナオになれる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E7A",
@@ -1614,7 +1730,8 @@
   "inner_ids": [],
   "jp": "もどかしい　おもい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E84",
@@ -1624,7 +1741,8 @@
   "inner_ids": [],
   "jp": "つよい　ゆうきに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E8D",
@@ -1634,7 +1752,8 @@
   "inner_ids": [],
   "jp": "かわっていくよ　ずっと",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0E99",
@@ -1644,7 +1763,8 @@
   "inner_ids": [],
   "jp": "すき　と　いえる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EA2",
@@ -1654,7 +1774,8 @@
   "inner_ids": [],
   "jp": "7いろの　かぜにふかれて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EAF",
@@ -1664,7 +1785,8 @@
   "inner_ids": [],
   "jp": "とおい　みさきをめざしてた",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EBD",
@@ -1674,7 +1796,8 @@
   "inner_ids": [],
   "jp": "よあけまえ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EC3",
@@ -1684,7 +1807,8 @@
   "inner_ids": [],
   "jp": "きこえた　メロディ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0ECD",
@@ -1694,7 +1818,8 @@
   "inner_ids": [],
   "jp": "それはとても",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0ED4",
@@ -1704,7 +1829,8 @@
   "inner_ids": [],
   "jp": "なつかしい　うた",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EDD",
@@ -1714,7 +1840,8 @@
   "inner_ids": [],
   "jp": "ひがしの　そらへと",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EE7",
@@ -1724,7 +1851,8 @@
   "inner_ids": [],
   "jp": "はばたく　とりたち",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EF1",
@@ -1734,7 +1862,8 @@
   "inner_ids": [],
   "jp": "さあ　たからじまに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0EFB",
@@ -1744,7 +1873,8 @@
   "inner_ids": [],
   "jp": "ぬける　ちかみち",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F04",
@@ -1754,7 +1884,8 @@
   "inner_ids": [],
   "jp": "7つのうみの　らくえん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F10",
@@ -1764,7 +1895,8 @@
   "inner_ids": [],
   "jp": "あらしのよるの　あとには",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F1D",
@@ -1774,7 +1906,8 @@
   "inner_ids": [],
   "jp": "あいを　つたえるため",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F28",
@@ -1784,7 +1917,8 @@
   "inner_ids": [],
   "jp": "いのちが　また　うまれる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F35",
@@ -1794,7 +1928,8 @@
   "inner_ids": [],
   "jp": "7つのくにの　メロディア",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F42",
@@ -1804,7 +1939,8 @@
   "inner_ids": [],
   "jp": "だれもが　いつかはここを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F4F",
@@ -1814,7 +1950,8 @@
   "inner_ids": [],
   "jp": "たびだつ　ひがきても",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F5A",
@@ -1824,7 +1961,8 @@
   "inner_ids": [],
   "jp": "ワタシは　わすれない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F65",
@@ -1834,7 +1972,8 @@
   "inner_ids": [],
   "jp": "7つのうみの　らくえん",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F71",
@@ -1844,7 +1983,8 @@
   "inner_ids": [],
   "jp": "あらしのよるの　あとには",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F7E",
@@ -1854,7 +1994,8 @@
   "inner_ids": [],
   "jp": "あいを　つたえるため",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F89",
@@ -1864,7 +2005,8 @@
   "inner_ids": [],
   "jp": "いのちが　また　うまれる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0F96",
@@ -1874,7 +2016,8 @@
   "inner_ids": [],
   "jp": "7つのくにの　メロディア",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FA3",
@@ -1884,7 +2027,8 @@
   "inner_ids": [],
   "jp": "だれもが　いつかはここを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FB0",
@@ -1894,7 +2038,8 @@
   "inner_ids": [],
   "jp": "たびだつ　ひがきても",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FBB",
@@ -1904,7 +2049,8 @@
   "inner_ids": [],
   "jp": "ワタシは　わすれない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FC6",
@@ -1914,7 +2060,8 @@
   "inner_ids": [],
   "jp": "Star　Light!",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FD2",
@@ -1924,7 +2071,8 @@
   "inner_ids": [],
   "jp": "ひかりを　もっとあつめたら",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FE0",
@@ -1934,7 +2082,8 @@
   "inner_ids": [],
   "jp": "この　せかいは",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FE8",
@@ -1944,7 +2093,8 @@
   "inner_ids": [],
   "jp": "きっとかわってく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FF1",
@@ -1954,7 +2104,8 @@
   "inner_ids": [],
   "jp": "むかいかぜの　なかでも",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t0FFD",
@@ -1964,7 +2115,8 @@
   "inner_ids": [],
   "jp": "くらい　うみの　そこでも",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t100A",
@@ -1974,7 +2126,8 @@
   "inner_ids": [],
   "jp": "このてを　はなさないで…",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1017",
@@ -1984,7 +2137,8 @@
   "inner_ids": [],
   "jp": "ぜったい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t101C",
@@ -1994,7 +2148,8 @@
   "inner_ids": [],
   "jp": "ゆめが　はじまる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1025",
@@ -2004,7 +2159,8 @@
   "inner_ids": [],
   "jp": "Super　Live",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1030",
@@ -2014,7 +2170,8 @@
   "inner_ids": [],
   "jp": "ひかりと　かげの　ステージ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t103E",
@@ -2024,7 +2181,8 @@
   "inner_ids": [],
   "jp": "あいを　つたえて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1047",
@@ -2034,7 +2192,8 @@
   "inner_ids": [],
   "jp": "Super　Songs",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1053",
@@ -2044,7 +2203,8 @@
   "inner_ids": [],
   "jp": "ゆうきをくれる　あいのうた",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1061",
@@ -2054,7 +2214,8 @@
   "inner_ids": [],
   "jp": "あいを　みぎてに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t106A",
@@ -2064,7 +2225,8 @@
   "inner_ids": [],
   "jp": "Super　Live",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1075",
@@ -2074,7 +2236,8 @@
   "inner_ids": [],
   "jp": "なみだと　あせの　ステージ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1083",
@@ -2084,7 +2247,8 @@
   "inner_ids": [],
   "jp": "うたい　つづけて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t108C",
@@ -2094,7 +2258,8 @@
   "inner_ids": [],
   "jp": "Super　Girls",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1098",
@@ -2104,7 +2269,8 @@
   "inner_ids": [],
   "jp": "おもいは　せかいをつなぐよ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10A6",
@@ -2114,7 +2280,8 @@
   "inner_ids": [],
   "jp": "きいて　むねの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10AE",
@@ -2124,7 +2291,8 @@
   "inner_ids": [],
   "jp": "はじけてとびちる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10B7",
@@ -2134,7 +2302,8 @@
   "inner_ids": [],
   "jp": "なんだろう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10BD",
@@ -2144,7 +2313,8 @@
   "inner_ids": [],
   "jp": "ふれて　むねの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10C5",
@@ -2154,7 +2324,8 @@
   "inner_ids": [],
   "jp": "ちいさく　もえてる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10CF",
@@ -2164,7 +2335,8 @@
   "inner_ids": [],
   "jp": "あついほのお　こんなきもち",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10DD",
@@ -2174,7 +2346,8 @@
   "inner_ids": [],
   "jp": "はじめてなのよ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10E5",
@@ -2184,7 +2357,8 @@
   "inner_ids": [],
   "jp": "うたいだしたら　とまらない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t10F3",
@@ -2194,7 +2368,8 @@
   "inner_ids": [],
   "jp": "おどりだしたら　とまらない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1101",
@@ -2204,7 +2379,8 @@
   "inner_ids": [],
   "jp": "もどれない　まがらない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t110D",
@@ -2214,7 +2390,8 @@
   "inner_ids": [],
   "jp": "すきにならずに　いれない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t111A",
@@ -2224,7 +2401,8 @@
   "inner_ids": [],
   "jp": "あおい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t111E",
@@ -2234,7 +2412,8 @@
   "inner_ids": [],
   "jp": "うみにおよぐサンゴの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1129",
@@ -2244,7 +2423,8 @@
   "inner_ids": [],
   "jp": "ヒミツ　つげる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1131",
@@ -2254,7 +2434,8 @@
   "inner_ids": [],
   "jp": "こいを　しったの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t113A",
@@ -2264,7 +2445,8 @@
   "inner_ids": [],
   "jp": "あたし",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t113E",
@@ -2274,7 +2456,8 @@
   "inner_ids": [],
   "jp": "もっと　うたいつづける",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t114A",
@@ -2284,7 +2467,8 @@
   "inner_ids": [],
   "jp": "この　むねの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1151",
@@ -2294,7 +2478,8 @@
   "inner_ids": [],
   "jp": "ときめきをあげる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t115A",
@@ -2304,7 +2489,8 @@
   "inner_ids": [],
   "jp": "あおい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t115E",
@@ -2314,7 +2500,8 @@
   "inner_ids": [],
   "jp": "うみにおよぐサンゴの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1169",
@@ -2324,7 +2511,8 @@
   "inner_ids": [],
   "jp": "ヒミツ　つげる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1171",
@@ -2334,7 +2522,8 @@
   "inner_ids": [],
   "jp": "こいを　しったの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t117A",
@@ -2344,7 +2533,8 @@
   "inner_ids": [],
   "jp": "あたし",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t117E",
@@ -2354,7 +2544,8 @@
   "inner_ids": [],
   "jp": "もっと　うたいつづける",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t118A",
@@ -2364,7 +2555,8 @@
   "inner_ids": [],
   "jp": "この　むねの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1191",
@@ -2374,7 +2566,8 @@
   "inner_ids": [],
   "jp": "ときめきをあげる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t119A",
@@ -2384,7 +2577,8 @@
   "inner_ids": [],
   "jp": "しおさいのつむぐメロディー",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11A8",
@@ -2394,7 +2588,8 @@
   "inner_ids": [],
   "jp": "みちてく　おもい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11B1",
@@ -2404,7 +2599,8 @@
   "inner_ids": [],
   "jp": "きつく　めを　とじて…",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11BD",
@@ -2414,7 +2610,8 @@
   "inner_ids": [],
   "jp": "ほしくずのえがくメッセージ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11CB",
@@ -2424,7 +2621,8 @@
   "inner_ids": [],
   "jp": "ひろいあつめて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11D3",
@@ -2434,7 +2632,8 @@
   "inner_ids": [],
   "jp": "このむねに　きざむ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11DD",
@@ -2444,7 +2643,8 @@
   "inner_ids": [],
   "jp": "しんじきる　ことが",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11E7",
@@ -2454,7 +2654,8 @@
   "inner_ids": [],
   "jp": "なによりも　つよく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11F1",
@@ -2464,7 +2665,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t11FE",
@@ -2474,7 +2676,8 @@
   "inner_ids": [],
   "jp": "いのりは　やのように",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1209",
@@ -2484,7 +2687,8 @@
   "inner_ids": [],
   "jp": "7つのうみ　めぐり",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1213",
@@ -2494,7 +2698,8 @@
   "inner_ids": [],
   "jp": "とうめいなあいを　いぬく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1220",
@@ -2504,7 +2709,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t122D",
@@ -2514,7 +2720,8 @@
   "inner_ids": [],
   "jp": "ひとみの　おくに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1236",
@@ -2524,7 +2731,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1243",
@@ -2534,7 +2742,8 @@
   "inner_ids": [],
   "jp": "すべてを　ささげて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t124D",
@@ -2544,7 +2753,8 @@
   "inner_ids": [],
   "jp": "まもりたい　あいだけを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1259",
@@ -2554,7 +2764,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1266",
@@ -2564,7 +2775,8 @@
   "inner_ids": [],
   "jp": "いのりは　やのように",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1271",
@@ -2574,7 +2786,8 @@
   "inner_ids": [],
   "jp": "7つのうみ　めぐり",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t127B",
@@ -2584,7 +2797,8 @@
   "inner_ids": [],
   "jp": "とうめいなあいを　いぬく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1288",
@@ -2594,7 +2808,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1295",
@@ -2604,7 +2819,8 @@
   "inner_ids": [],
   "jp": "ひとみの　おくに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t129E",
@@ -2614,7 +2830,8 @@
   "inner_ids": [],
   "jp": "Splash　Dream",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12AB",
@@ -2624,7 +2841,8 @@
   "inner_ids": [],
   "jp": "すべてを　ささげて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12B5",
@@ -2634,7 +2852,8 @@
   "inner_ids": [],
   "jp": "まもりたい　あいだけを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12C1",
@@ -2644,7 +2863,8 @@
   "inner_ids": [],
   "jp": "おとを　たてずに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12CA",
@@ -2654,7 +2874,8 @@
   "inner_ids": [],
   "jp": "いろを　かえてく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12D3",
@@ -2664,7 +2885,8 @@
   "inner_ids": [],
   "jp": "ベビー・ブルーの　そらを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12E0",
@@ -2674,7 +2896,8 @@
   "inner_ids": [],
   "jp": "みつめてたら",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12E7",
@@ -2684,7 +2907,8 @@
   "inner_ids": [],
   "jp": "とおいきおく　よみがえる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t12F4",
@@ -2694,7 +2918,8 @@
   "inner_ids": [],
   "jp": "ねえ　7つの　うみのむこう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1302",
@@ -2704,7 +2929,8 @@
   "inner_ids": [],
   "jp": "ほら　だれかが　ないている",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1310",
@@ -2714,7 +2940,8 @@
   "inner_ids": [],
   "jp": "きがして　むねが",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1319",
@@ -2724,7 +2951,8 @@
   "inner_ids": [],
   "jp": "キュンと　せつなくなるよ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1326",
@@ -2734,7 +2962,8 @@
   "inner_ids": [],
   "jp": "わたしを　たすけて…",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1331",
@@ -2744,7 +2973,8 @@
   "inner_ids": [],
   "jp": "なにかが　しらせる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t133B",
@@ -2754,7 +2984,8 @@
   "inner_ids": [],
   "jp": "Destiny",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1343",
@@ -2764,7 +2995,8 @@
   "inner_ids": [],
   "jp": "ほしの　みちびきを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t134D",
@@ -2774,7 +3006,8 @@
   "inner_ids": [],
   "jp": "むねに　だきしめて　それは",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t135B",
@@ -2784,7 +3017,8 @@
   "inner_ids": [],
   "jp": "エバー・ブルー　かがやく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1368",
@@ -2794,7 +3028,8 @@
   "inner_ids": [],
   "jp": "だいすきな　あのうみよ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1374",
@@ -2804,7 +3039,8 @@
   "inner_ids": [],
   "jp": "みらいを　まもる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t137D",
@@ -2814,7 +3050,8 @@
   "inner_ids": [],
   "jp": "ちからをいま　あつめて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1389",
@@ -2824,7 +3061,8 @@
   "inner_ids": [],
   "jp": "あいすべき　ひとがいて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1395",
@@ -2834,7 +3072,8 @@
   "inner_ids": [],
   "jp": "あいすべき　ばしょがある",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13A2",
@@ -2844,7 +3083,8 @@
   "inner_ids": [],
   "jp": "きらめく　あおさ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13AB",
@@ -2854,7 +3094,8 @@
   "inner_ids": [],
   "jp": "ピュアな　きもちのままで",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13B8",
@@ -2864,7 +3105,8 @@
   "inner_ids": [],
   "jp": "まもる　ために",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13C0",
@@ -2874,7 +3116,8 @@
   "inner_ids": [],
   "jp": "ながれぼしに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13C7",
@@ -2884,7 +3127,8 @@
   "inner_ids": [],
   "jp": "ねがいをかけた　7つの",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13D3",
@@ -2894,7 +3138,8 @@
   "inner_ids": [],
   "jp": "ひかり　みつけだして",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13DE",
@@ -2904,7 +3149,8 @@
   "inner_ids": [],
   "jp": "はなればなれになった",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13E9",
@@ -2914,7 +3160,8 @@
   "inner_ids": [],
   "jp": "ジュエリー・スター",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t13F3",
@@ -2924,7 +3171,8 @@
   "inner_ids": [],
   "jp": "うんめいという　きずなを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1400",
@@ -2934,7 +3182,8 @@
   "inner_ids": [],
   "jp": "しんじてる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1406",
@@ -2944,7 +3193,8 @@
   "inner_ids": [],
   "jp": "つめたい　なみにとけた",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1412",
@@ -2954,7 +3204,8 @@
   "inner_ids": [],
   "jp": "なみだの　ゆくえは",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t141C",
@@ -2964,7 +3215,8 @@
   "inner_ids": [],
   "jp": "だれにも　きづかれないまま",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t142A",
@@ -2974,7 +3226,8 @@
   "inner_ids": [],
   "jp": "そっと　あわときえていった",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1438",
@@ -2984,7 +3237,8 @@
   "inner_ids": [],
   "jp": "なくしたものを　さがしてる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1446",
@@ -2994,7 +3248,8 @@
   "inner_ids": [],
   "jp": "ココロが　せつない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1450",
@@ -3004,7 +3259,8 @@
   "inner_ids": [],
   "jp": "みどりのあめに　つつまれて",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t145E",
@@ -3014,7 +3270,8 @@
   "inner_ids": [],
   "jp": "うたい　つづける",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1467",
@@ -3024,7 +3281,8 @@
   "inner_ids": [],
   "jp": "Song　for　You",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1474",
@@ -3034,7 +3292,8 @@
   "inner_ids": [],
   "jp": "うまれかわる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t147B",
@@ -3044,7 +3303,8 @@
   "inner_ids": [],
   "jp": "あさが　くるなら",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1484",
@@ -3054,7 +3314,8 @@
   "inner_ids": [],
   "jp": "おなじ　いのちを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t148D",
@@ -3064,7 +3325,8 @@
   "inner_ids": [],
   "jp": "また　いきたい",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1495",
@@ -3074,7 +3336,8 @@
   "inner_ids": [],
   "jp": "めぐりあえる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t149C",
@@ -3084,7 +3347,8 @@
   "inner_ids": [],
   "jp": "すべての　ものが",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14A5",
@@ -3094,7 +3358,8 @@
   "inner_ids": [],
   "jp": "ほうせきになる　きせきを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14B2",
@@ -3104,7 +3369,8 @@
   "inner_ids": [],
   "jp": "しんじてる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14B8",
@@ -3114,7 +3380,8 @@
   "inner_ids": [],
   "jp": "アルプスいちまんじゃく",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14C4",
@@ -3124,7 +3391,8 @@
   "inner_ids": [],
   "jp": "こやりのうえで",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14CC",
@@ -3134,7 +3402,8 @@
   "inner_ids": [],
   "jp": "アルペンおどりを",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14D5",
@@ -3144,7 +3413,8 @@
   "inner_ids": [],
   "jp": "さあおどりましょ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14DE",
@@ -3154,7 +3424,8 @@
   "inner_ids": [],
   "jp": "ララララ　ララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14E8",
@@ -3164,7 +3435,8 @@
   "inner_ids": [],
   "jp": "ララララ　ラララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14F1",
@@ -3174,7 +3446,8 @@
   "inner_ids": [],
   "jp": "ララララ　ララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t14FB",
@@ -3184,7 +3457,8 @@
   "inner_ids": [],
   "jp": "ラララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1501",
@@ -3194,7 +3468,8 @@
   "inner_ids": [],
   "jp": "ララララ　ララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t150B",
@@ -3204,7 +3479,8 @@
   "inner_ids": [],
   "jp": "ララララ　ラララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1514",
@@ -3214,7 +3490,8 @@
   "inner_ids": [],
   "jp": "ララララ　ララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t151E",
@@ -3224,7 +3501,8 @@
   "inner_ids": [],
   "jp": "ラララララ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1524",
@@ -3234,7 +3512,8 @@
   "inner_ids": [],
   "jp": "ぼくのだいすきな",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t152D",
@@ -3244,7 +3523,8 @@
   "inner_ids": [],
   "jp": "クラリネット",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1534",
@@ -3254,7 +3534,8 @@
   "inner_ids": [],
   "jp": "パパからもらった",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t153D",
@@ -3264,7 +3545,8 @@
   "inner_ids": [],
   "jp": "クラリネット",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1544",
@@ -3274,7 +3556,8 @@
   "inner_ids": [],
   "jp": "とってもだいじに　してたのに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1553",
@@ -3284,7 +3567,8 @@
   "inner_ids": [],
   "jp": "こわれてでない　おとがある",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1561",
@@ -3294,7 +3578,8 @@
   "inner_ids": [],
   "jp": "どうしよう　どうしよう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t156D",
@@ -3304,7 +3589,8 @@
   "inner_ids": [],
   "jp": "オ　パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1576",
@@ -3314,7 +3600,8 @@
   "inner_ids": [],
   "jp": "パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t157D",
@@ -3324,7 +3611,8 @@
   "inner_ids": [],
   "jp": "パオパオ　パンパンパン",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1589",
@@ -3334,7 +3622,8 @@
   "inner_ids": [],
   "jp": "オ　パキャマラド　",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1593",
@@ -3344,7 +3633,8 @@
   "inner_ids": [],
   "jp": "パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t159A",
@@ -3354,7 +3644,8 @@
   "inner_ids": [],
   "jp": "パオパオ　パ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15A1",
@@ -3364,7 +3655,8 @@
   "inner_ids": [],
   "jp": "ドとレとミとファとソと",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15AD",
@@ -3374,7 +3666,8 @@
   "inner_ids": [],
   "jp": "ラとシのおとがでない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15B8",
@@ -3384,7 +3677,8 @@
   "inner_ids": [],
   "jp": "ドとレとミとファとソと",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15C4",
@@ -3394,7 +3688,8 @@
   "inner_ids": [],
   "jp": "ラとシのおとがでない",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15CF",
@@ -3404,7 +3699,8 @@
   "inner_ids": [],
   "jp": "パパもだいじに　してたのに",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15DD",
@@ -3414,7 +3710,8 @@
   "inner_ids": [],
   "jp": "みーつけられたら　おこられる",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15EC",
@@ -3424,7 +3721,8 @@
   "inner_ids": [],
   "jp": "どうしよう　どうしよう",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t15F8",
@@ -3434,7 +3732,8 @@
   "inner_ids": [],
   "jp": "オ　パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1601",
@@ -3444,7 +3743,8 @@
   "inner_ids": [],
   "jp": "パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1608",
@@ -3454,7 +3754,8 @@
   "inner_ids": [],
   "jp": "パオパオ　パンパンパン",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1614",
@@ -3464,7 +3765,8 @@
   "inner_ids": [],
   "jp": "オ　パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t161D",
@@ -3474,7 +3776,8 @@
   "inner_ids": [],
   "jp": "パキャマラド",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  },
  {
   "id": "t1624",
@@ -3484,6 +3787,7 @@
   "inner_ids": [],
   "jp": "パオパオ　パ　オ　パ",
   "en": "",
-  "notes": ""
+  "notes": "",
+  "box": "lyric"
  }
 ]
