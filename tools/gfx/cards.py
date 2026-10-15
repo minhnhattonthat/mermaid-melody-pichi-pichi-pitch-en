@@ -172,6 +172,29 @@ def banners(rom):
     return s
 
 
+def patch_040():
+    """#40 results sheet: the medley line "65 pts でクリア" kept でクリア (tiles 0xD0-0xD4 over 0xE0-0xE4, shown as a
+    40x16 block). Redraw it as "to clear" on top of the graphics workstream's PNG (idempotent)."""
+    p = os.path.join(ROOT, "gfx", "en", "c67d94_040.png")
+    im = Image.open(p)
+    a = np.array(im)
+    blk = np.zeros((16, 40), np.uint8)
+    m = pixfont.render("to clear") > 0
+    ring = pixfont.dilate(m.astype(np.uint8), 1) > 0
+    oy, ox = 3, (40 - m.shape[1]) // 2
+    for yy, xx in zip(*np.nonzero(ring)):
+        if 0 <= oy - 1 + yy < 16 and 0 <= ox - 1 + xx < 40:
+            blk[oy - 1 + yy, ox - 1 + xx] = 0x9
+    for yy, xx in zip(*np.nonzero(m)):
+        blk[oy + yy, ox + xx] = 0xE
+    for k in range(5):
+        a[48:56, 128 + 8 * k:136 + 8 * k] = blk[0:8, 8 * k:8 * k + 8]
+        a[56:64, 8 * k:8 * k + 8] = blk[8:16, 8 * k:8 * k + 8]
+    out = Image.fromarray(a, "P")
+    out.putpalette(im.getpalette())
+    out.save(p)
+
+
 def main():
     rom = open(os.path.join(ROOT, "rom", "Mermaid Melody - Pichi Pichi Pitch (Japan).gba"), "rb").read()
     previews = []
@@ -189,6 +212,7 @@ def main():
         res.save_png(res.to_sheet(bytes(c.data), c.info), os.path.join(ROOT, "gfx", "en", f"c67d94_{i:03d}.png"))
         previews.append(c.rgb())
     b = banners(rom)
+    patch_040()
     if "--preview" in sys.argv:
         res.save_png(b, os.path.join(ROOT, "work", "banner176.png"), zoom=3)
         W = 3
