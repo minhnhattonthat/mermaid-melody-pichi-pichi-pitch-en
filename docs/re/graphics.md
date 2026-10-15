@@ -22,8 +22,11 @@ by apply.py to the matching new chunk.
 | #119 | post-song みる/セーブ/もどる | results + A | English |
 | #120 | Hippo editor menu bubbles, START/SELECT headers | Hippo Pitch (menu left x2, A; START) | English (incl. まえとかわったけどセーブする? panel; edit a line, START, Back) |
 | #57 | Style Pitch options plates (ヘッドホン はいけい やじるし あり なし 矢印 絵 なまえ) | menu left, A, right, A | English |
-| #157-#175, #177 | full-screen stills (save broken, Game Over, ending cards) | | controller |
-| #176 | ゲームオーバー / クリアもくひょう / クリア banners | | controller |
+| #157, #158 | save / Live data broken speech bubbles | boot with a broken save (not triggered in QA; previewed offline with the game's own map+palette via tools/gfx/uemu.py) | English (tools/gfx/cards.py) |
+| #159-#163 | three girls, GAME OVER x3, Congratulations! | Game Over: Medley Pitch fail (work/qa/go2 states) | no Japanese |
+| #164-#175 | ending / mode cards with the ぴちぴちピッチ logo | Medley Pitch mode card (#164 seen in game); others previewed offline | English logo sticker; minor tile artifacts where a tile is shared or its palette lacks white (#172, #175) |
+| #176 | ゲームオーバー / クリアもくひょう / クリア sprites | Game Over overlay + Medley clear-goal card (seen in game) | English: GAME / OVER, Clear Goal, CL-EA-R! (CLEAR not seen in game) |
+| #177 | crowd banner with Japanese logo | screen not found (no load seen in solo, medley, live flows) | kept Japanese: screen unknown, possibly unused |
 | #45, #39 | mermaid melody frame | | Latin already |
 | dd62a0, ef4890, f24461, f5837f, f8854f, eb19e0, fc0830, 0273d0 | art, video frames, arrows, digits | | no Japanese text |
 
