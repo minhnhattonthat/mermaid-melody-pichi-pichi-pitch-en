@@ -1,0 +1,8 @@
+# cold boot -> main menu
+1300 -
+20 start
+300 -
+20 start
+200 -
+20 start
+250 -
