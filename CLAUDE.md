@@ -28,8 +28,7 @@ Batch brief: H:\translation\batch\projects\BATCH_BRIEF.md (all rulings pre-appro
 - Debug menu: poke state 0x0001 into 0x03001E00 from the main menu (tools/debug/state.lua); states in work/states/.
 
 ## Status
-- Done: text side complete (304/304 strings English, reviewed, lint 0; VWF; name entry Latin grid; staff roll
-  reflowed). Release tooling ready (tools/release.py). Graphics: title, main menu buttons/bars, song plates, name
-  grid English. Next: remaining graphics rows (difficulty, results, post-song menu, sub menus, live, song editor,
-  title cards #157-175, button hints) -> docs/re/graphics.md; phase 8 QA (save/load on 32 MiB, ending, staff roll,
-  t022E/t027B/save-error screens); release. Open bugs: none known.
+- Done: all phases. Text 304/304 English; graphics rows in docs/re/graphics.md English except #177 (screen not
+  found). Cards #157-176 made by tools/gfx/cards.py (offline map/palette via tools/gfx/uemu.py). Release via
+  tools/release.py. Known issues: README template. QA states made with the JP ROM keep JP SRAM (Hippo song):
+  regenerate from cold boot.

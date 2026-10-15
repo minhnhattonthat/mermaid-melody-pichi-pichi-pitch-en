@@ -33,6 +33,16 @@ Notes
 - Staff names of the Konami team were romanised from the game's font; a few readings
   may be wrong. Song credits were checked against the series discography.
 - Lyrics are translations for meaning, not singable adaptations.
+- Known issues:
+  * The score unit is shortened to "pts" (only 16-32 px of room in the HUD and results).
+  * Hippo's song maker holds one letter per note, so its default song is a short
+    English adaptation (8 letters per line); Rina's name did not fit.
+  * A few full-screen illustration cards show small tile artifacts around the new
+    English logo where the picture shares tiles or colours.
+  * One crowd-banner picture (resource #177) is still Japanese: no screen that
+    shows it was found.
+  * The "save data is damaged" screens and the "CLEAR!" banner were checked
+    offline/in the sprite sheet but not seen during play.
 
 Credits
   Translation, engine work and graphics: fan translation made with AI assistance
