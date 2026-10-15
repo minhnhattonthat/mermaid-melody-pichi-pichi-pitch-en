@@ -64,11 +64,45 @@ def obj_layer(d):
                 if sy >= 256 or sx >= 256:
                     continue
                 v = sheet_px(d.vram, sx, sy)
-                if v:
+                if v or idx[Y, X] < 0:
                     idx[Y, X] = v
                     pal[Y, X] = 16 + o["pal"]
                     src[Y, X] = (sx, sy)
     return idx, pal, src
+
+
+def edit_obj(dump, sheet, origin, rect, draw, view=None):
+    """Screen-space edit of an OBJ resource sheet.
+    sheet: resource index sheet (res.to_sheet); origin: (tile x, tile y) of the sheet's top-left in OBJ VRAM;
+    rect: (x0, y0, x1, y1) screen area; draw(canvas, covered) edits canvas in place (uint8 indices, -1 = no sprite).
+    Pixels are written back only where a sprite of this resource covers the screen."""
+    idx, pal, src = obj_layer(dump)
+    x0, y0, x1, y1 = rect
+    ox, oy = origin[0] * 8, origin[1] * 8
+    H, W = sheet.shape
+    cov = np.zeros((y1 - y0, x1 - x0), bool)
+    canvas = np.zeros((y1 - y0, x1 - x0), np.int16) - 1
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            sx, sy = src[y, x]
+            if sx >= 0 and 0 <= sx - ox < W and 0 <= sy - oy < H:
+                cov[y - y0, x - x0] = True
+                canvas[y - y0, x - x0] = sheet[sy - oy, sx - ox]
+    if view:
+        from PIL import Image
+        im = Image.new("RGB", (x1 - x0, y1 - y0), (255, 0, 255))
+        for y in range(y1 - y0):
+            for x in range(x1 - x0):
+                if cov[y, x]:
+                    im.putpixel((x, y), dump.color(pal[y + y0, x + x0], canvas[y, x]))
+        im.resize((im.width * 4, im.height * 4), Image.NEAREST).save(view)
+    draw(canvas, cov)
+    for y in range(y0, y1):
+        for x in range(x0, x1):
+            if cov[y - y0, x - x0]:
+                sx, sy = src[y, x]
+                sheet[sy - oy, sx - ox] = canvas[y - y0, x - x0]
+    return sheet
 
 
 def rgb(d, idx, pal, bg=(255, 0, 255)):

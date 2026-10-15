@@ -72,11 +72,17 @@ def fix_controls(markup):
 
 def glyph_bytes(ch):
     rows = G[ch]
+    w = len(rows[0])
+    grid = [[{".": 0, "+": 2, "#": 3}[p] for p in r] + [0] for r in rows]  # +1 column for the shadow
+    for y in range(12):  # drop shadow (colour 1, dark) right / below / below-right, like the original outline
+        for x in range(w + 1):
+            if grid[y][x] == 0 and any(0 <= y - dy < 12 and 0 <= x - dx <= w and grid[y - dy][x - dx] >= 2
+                                       for dx, dy in ((1, 0), (0, 1), (1, 1))):
+                grid[y][x] = 1
     out = bytearray()
-    for r in rows:
+    for r in grid:
         bits = 0
-        for i, p in enumerate(r[:12]):
-            v = {".": 0, "+": 2, "#": 3}[p]
+        for i, v in enumerate(r[:12]):
             bits |= v << (2 * i)
         out += bits.to_bytes(3, "little")
     return bytes(out)
@@ -164,12 +170,15 @@ def lint(ents):
         b = budgets.get(box)
         if b:
             lim = jp_line_px(e["jp"]) if box == "fit" else None
+            en_lines = en.split("\n")
             for i, w in enumerate(line_widths(en)):
                 cap = (lim[i] if i < len(lim) else 0) if lim is not None else b["px"]
+                if cap and lim is not None and "[FB" in en_lines[i]:
+                    cap += 30  # printed digits are ~5 px in the English font instead of 8-12 px
                 if cap and w > cap:
                     print(e["id"], f"line {i + 1}: {w}px > {cap}px ({box})"); errs += 1
-            if b.get("lines") and en.count("\n") + 1 > b["lines"]:
-                print(e["id"], f"{en.count(chr(10)) + 1} lines > {b['lines']} ({box})"); errs += 1
+            if box == "lyric" and en.count("\n") != e["jp"].count("\n"):
+                print(e["id"], f"lyric line count differs from jp ({box})"); errs += 1
     return errs
 
 

@@ -2,7 +2,8 @@
 
 Layouts (decided by the info byte, see docs/re/README.md):
   info & 8 (OBJ/strip): chunk c (of N) slice s (0x200 B = 16 tiles) lands at sheet row (c % H)*4+s, half c // H,
-                        H = ceil(N/2) (N=1: H=1): a sheet 32 tiles wide, H*4 tile rows (2D OBJ VRAM order).
+                        H = ceil(N/2) if info&1 else 8: a sheet 32 tiles wide (2D OBJ VRAM order, checked
+                        against gfxload.lua DMA logs for #27 #28 #35 #209).
   else (linear):        tiles in order, 32 tiles per sheet row.
 4bpp only (8bpp resources are flagged and handled separately).
 """
@@ -47,7 +48,7 @@ def slots(n_bytes, info):
     res = []
     if info & 8:
         N = (info >> 4) + 1
-        H = max(1, (N + 1) // 2)
+        H = max(1, (N + 1) // 2) if info & 1 else 8  # bit0: two halves side by side; else 8 chunks per column
         csz = banks.chunk_size(info)
         for t in range(nt):
             o = t * 32

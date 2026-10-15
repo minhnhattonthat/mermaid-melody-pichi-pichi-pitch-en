@@ -112,11 +112,16 @@ aloop:
     ldr r5, [sp, #8]
     lsls r0, r4, #1
     adds r5, r5, r0
+    lsls r0, r4, #3
+    ldr r1, [sp, #4]
+    cmp r0, r1
+    bge afresh
     ldrh r0, [r5]
     ldr r1, lit_3ff
     ands r0, r1
     cmp r0, #5
     bhi ahave
+afresh:
     movs r0, #2
     ldr r1, [sp, #72]
     ldr r2, lit_alloc
