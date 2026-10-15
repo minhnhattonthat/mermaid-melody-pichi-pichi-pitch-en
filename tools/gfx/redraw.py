@@ -316,10 +316,29 @@ def r_072():
             assert m.shape[1] + 2 <= avail, main
             plate_text(c, 2, 10 if m.shape[0] <= 10 else 9, m)
         screen.edit_obj(dump(dn), sh, (0, 8), (40, ty - 8, 220, ty + 16), draw)
+    # Live / Hippo plates: the game block-copies these 128x16 sources (sheet rows 16-17) into a plate slot;
+    # the Live slot sprites show 80 px of the block, the Hippo one the original text width (~120 px)
+    for x0, text, avail in ((0, "Song with Hippo!!", 118), (128, "Nothing here!", 78)):
+        blk = sh[128:144, x0:x0 + 128]
+        blk[:] = 0
+        m = title_mask(text, avail)
+        assert m.shape[1] + 2 <= avail, text
+        plate_text(blk, 1, 2 if m.shape[0] <= 10 else 1, m)
     save(sh, B0, 72)
 
 
-ALL = {"027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072}
+# ---------------------------------------------------------------- play screen score unit (#7 BG tiles 0xD4-0xD5)
+def r_007():
+    sh = load(B0, 7)
+    blk = sh[48:56, 160:176]       # "てん" (points) after each score, 16x8: "pts" (abbreviation, only 2 tiles)
+    blk[:] = 9
+    m = P.render_tiny("pts")
+    P._put(blk, (16 - m.shape[1]) // 2 + 1, 2, m, 10)
+    P._put(blk, (16 - m.shape[1]) // 2, 1, m, 14)
+    save(sh, B0, 7)
+
+
+ALL = {"027": r_027, "035": r_035, "209": r_209, "002": r_002, "072": r_072, "007": r_007}
 ALL.update({f"{i:03d}": r_bar(i) for i in BARS})
 
 if __name__ == "__main__":
