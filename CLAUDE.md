@@ -28,6 +28,8 @@ Batch brief: H:\translation\batch\projects\BATCH_BRIEF.md (all rulings pre-appro
 - Debug menu: poke state 0x0001 into 0x03001E00 from the main menu (tools/debug/state.lua); states in work/states/.
 
 ## Status
-- Done: phases 1-5 for text (identity build green, VWF marker build shows lyrics). Running: translator batches
-  b01-b04, graphics survey/redraw. Next: merge+review, name entry (Latin grid, NUMTAB 0xD7F384), other font users
-  (0x08003B8C renderer), QA routes, release. Open bugs: none.
+- Done: text side complete (304/304 strings English, reviewed, lint 0; VWF; name entry Latin grid; staff roll
+  reflowed). Release tooling ready (tools/release.py). Graphics: title, main menu buttons/bars, song plates, name
+  grid English. Next: remaining graphics rows (difficulty, results, post-song menu, sub menus, live, song editor,
+  title cards #157-175, button hints) -> docs/re/graphics.md; phase 8 QA (save/load on 32 MiB, ending, staff roll,
+  t022E/t027B/save-error screens); release. Open bugs: none known.
