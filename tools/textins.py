@@ -101,7 +101,7 @@ def dump(force=False):
 
 
 # ---------------------------------------------------------------- encode
-TOK = re.compile(r"\[([0-9A-F]{2}(?: [0-9A-F]{2})*)(?: (@))?\]|\{@\}|\n|.", re.S)
+TOK = re.compile(r"\[([0-9A-F]{2}(?: [0-9A-F]{2})*)(?: (@))?\]|\{@\}|\{[A-Z]\}|\n|.", re.S)
 
 
 def encode(markup, rev):
@@ -143,7 +143,7 @@ def apply(rom, lang="en", marker=False, alloc=None):
         s = int(e["id"][1:], 16)
         if lang and (e.get("en") or marker):
             txt = e["en"] if e.get("en") else f"[{e['id']}] " + font_en.marker_text(e["jp"])
-            data, labels, jumps = encode(txt, en_rev)
+            data, labels, jumps = encode(font_en.fix_controls(txt), en_rev)
         else:
             data, labels, jumps = encode(e["jp"], jp_rev)
         base_new = len(blob)
