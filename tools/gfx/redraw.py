@@ -353,7 +353,7 @@ def r_058():
     import screen
     sh = load(B0, 58)
     for (x, y, fill, lab) in ((0, 0, 11, "Easy"), (64, 0, 8, "Normal"), (0, 32, 5, "Hard"),
-                              (0, 64, 8, "Usual"), (64, 64, 5, "Freestyle")):
+                              (0, 64, 8, "Usual"), (64, 64, 5, "Free")):
         relabel(sh, x, y, 64, 32, fill, {11: (12, 13, 14, 15), 8: (9, 13, 14, 15), 5: (6, 13, 14, 15)}[fill], lab, dy=-1)
 
     # top hint "(A)ボタン けってい (B)ボタン もどる": the ボタン tiles are shared, so both get an arrow
@@ -425,10 +425,25 @@ def r_040():
             P._put(c, x, y, m, 15)
             c[~cov] = -1
         screen.edit_bg(dump(dn), sh, 2, 0, (0, 0, 240, 64), drawb)
+    # badges never captured on screen: rebuild them from the game's tile layout (tile = first + row*16 + col)
+    for t0, w, fill, tix, text in ((0xAC, 4, 5, (6, 13, 14, 15), "Hard"), (0xDB, 5, 5, (6, 13, 14, 15), "Free")):
+        comp = np.zeros((24, w * 8), np.uint8)
+        cells = [(r, c, t0 + r * 16 + c) for r in range(3) for c in range(w)]
+        for r, c, t in cells:
+            comp[r * 8:r * 8 + 8, c * 8:c * 8 + 8] = sh[(t // 32) * 8:(t // 32) * 8 + 8, (t % 32) * 8:(t % 32) * 8 + 8]
+        inner = comp[5:19, 4:w * 8]
+        fill = int(np.bincount(inner.ravel(), minlength=16).argmax())
+        inner[np.isin(inner, [v for v in (fill + 1, 13, 14, 15) if v != fill])] = fill
+        m = P.trim_rows(P.render(text, bold=P.width(text, bold=True) <= w * 8 - 6))
+        x, y = (w * 8 - m.shape[1]) // 2, (24 - m.shape[0]) // 2
+        P._put(comp, x - 1, y - 1, P.dilate(m, 1, True), fill + 1)
+        P._put(comp, x, y, m, 15)
+        for r, c, t in cells:
+            sh[(t // 32) * 8:(t // 32) * 8 + 8, (t % 32) * 8:(t % 32) * 8 + 8] = comp[r * 8:r * 8 + 8, c * 8:c * 8 + 8]
     save(sh, B0, 40)
 
 
-RESULT_BADGES_MORE = [("results_normal", (121, 8, 166, 23), 8, (9, 13, 14, 15), "Normal")]
+RESULT_BADGES_MORE = [("results_normal", (121, 8, 166, 26), 8, (9, 13, 14, 15), "Normal")]
 
 
 # ---------------------------------------------------------------- results total unit (#41 OBJ origin 0,24): big てん
@@ -474,6 +489,18 @@ def r_120():
         text_at(c, 88, 5, "A/a", 15, 5, bold=True)
         c[~cov] = -1
     screen.edit_obj(dump("hippo_entry"), sh, (16, 8), (120, 0, 240, 18), head2)
+
+    # "まえとかわったけどセーブする?" panel (x 36-203); the セーブする? sprite (x 140-203, on top) is also shown
+    # alone, so it holds a self-contained "Save it?"
+    def panel(c, cov):
+        txt = c[11:21, 10:158]
+        txt[np.isin(txt, (11, 12, 13, 14, 15))] = 10
+        for text, x in (("It changed!", 22), ("Save it?", 112)):
+            m = P.trim_rows(P.render(text, bold=True))
+            P._put(c, x - 1, 12, P.dilate(m, 1, True), 11)
+            P._put(c, x, 13, m, 15)
+        c[~cov] = -1
+    screen.edit_obj(dump("hippo_save"), sh, (16, 8), (36, 24, 204, 52), panel)
     save(sh, B0, 120)
 
 

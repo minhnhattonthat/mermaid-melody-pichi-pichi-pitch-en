@@ -25,7 +25,7 @@
 | 大事な宝箱 | My Precious Treasure Box | song plate (two lines) |
 | 恋はなんだろう | What Is Love? | song plate |
 | かんたん / ふつう / むずかしい | Easy / Normal / Hard | difficulty, results badge |
-| いつもの / きぶん | Usual / Freestyle | difficulty sub-option, results badge (きぶん meaning unverified) |
+| いつもの / きぶん | Usual / Free | difficulty sub-option, results badge (きぶん meaning unverified) |
 | Ⓐボタン けってい / Ⓑボタン もどる | (A) -> OK / (B) -> Back | difficulty hint |
 | うた / おどり | Song / Dance | results score labels |
 | てん | pts | score unit (abbreviation forced by 16-32 px space) |
@@ -34,3 +34,4 @@
 | はい / いいえ / あそぶ / きいてみる | Yes / No / Play / Listen | Hippo editor menu |
 | STARTボタン メニューへ / SELECTボタン きりかえ | START -> Menu / SELECT -> A/a | Hippo editor headers |
 | ヘッドホン / はいけい / やじるし / 矢印 / 絵 / なまえ / あり / なし | Headphones / Backdrop / Arrows / Arrow / Art / Name / On / Off | Style Pitch options |
+| まえとかわったけどセーブする? / セーブする? | It changed! Save it? / Save it? | Hippo editor save prompt |

@@ -15,11 +15,11 @@ Terms: docs/gfx_terms.md.
 | #209 | name entry header START/SELECTボタン | gfx_nameentry.txt | English |
 | #72 | song plates (titles, furigana, Hippo/Nothing-here plates) | gfx_songselect.txt; Live (menu right x2, A) | English |
 | #7 | play HUD てん (2 tiles) | song play (gfx_solo.txt) | English "pts" (abbreviation, 16 px) |
-| #58 | difficulty bubbles, いつもの/きぶん, A/B hint | gfx_difficulty.txt | English (きぶん -> "Freestyle", meaning unverified) |
-| #40 | results labels, small てん, best score, badges | results (state work/qa/gfx_solo/s007000.mss +300 f) | English; Easy/Normal/Usual badges checked; Hard + Freestyle badge strips NOT edited (no capture) |
+| #58 | difficulty bubbles, いつもの/きぶん, A/B hint | gfx_difficulty.txt | English (きぶん -> "Free", meaning unverified) |
+| #40 | results labels, small てん, best score, badges | results (state work/qa/gfx_solo/s007000.mss +300 f) | English; Easy/Normal/Usual badges checked; Hard/Free badges rebuilt from the tile layout (first+row*16+col), not seen on screen |
 | #41 | results big てん | results | English "pts" |
 | #119 | post-song みる/セーブ/もどる | results + A | English |
-| #120 | Hippo editor menu bubbles, START/SELECT headers | Hippo Pitch (menu left x2, A; START) | English; セーブする? / まえとかわったけどセーブ panels NOT captured, still Japanese |
+| #120 | Hippo editor menu bubbles, START/SELECT headers | Hippo Pitch (menu left x2, A; START) | English (incl. まえとかわったけどセーブする? panel; edit a line, START, Back) |
 | #57 | Style Pitch options plates (ヘッドホン はいけい やじるし あり なし 矢印 絵 なまえ) | menu left, A, right, A | English |
 | #157-#175, #177 | full-screen stills (save broken, Game Over, ending cards) | | controller |
 | #176 | ゲームオーバー / クリアもくひょう / クリア banners | | controller |
