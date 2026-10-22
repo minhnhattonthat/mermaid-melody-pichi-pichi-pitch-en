@@ -3,7 +3,7 @@
 Binding for every translator and reviewer. Agents propose additions in reports; only the controller edits this file.
 Kept game-neutral where possible so the sequel (Pichi Pichi Party, sibling repo) can reuse it.
 
-## Rulings (pre-approved by the user, 2026-10)
+## Rulings (pre-approved by the user, 2026-10; options and reasons in docs/decisions.md)
 - Honorifics: dropped; convey closeness through register. ねーちゃん/にーちゃん -> "Sis"/"Bro" style address.
 - Name order: Western (given name first).
 - Romanisation source: official English localisation (Del Rey manga / English dub) where it exists, else modified Hepburn.

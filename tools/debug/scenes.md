@@ -3,7 +3,7 @@
 All from a cold boot: `tools/routes/mainmenu.txt` reaches the main menu (save `--state-out work/states/mainmenu.mss`).
 Debug menu: main menu route, then `--script tools/debug/state.lua --var STATE=0x0001 --var AT=2100` (the game's own
 leftover debug menu, state 0 of table 0x08EB0E9C) -> `work/states/debugmenu.mss` after ~3000 frames.
-`EMU = python -X utf8 H:/translation/batch/.claude/skills/translate-retro-game/scripts/emu.py <rom>`
+`EMU = python -X utf8 $SKILL/scripts/emu.py <rom>`
 
 | scene | how (from state) |
 |---|---|

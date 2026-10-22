@@ -3,6 +3,15 @@
 Base ROM: `rom/Mermaid Melody - Pichi Pichi Pitch (Japan).gba`, 16 MiB, SHA-1 4a0422acf0f22dd85f35a2e040adcfdf70dcc6ec.
 No earlier fan translation found (web search, 2026-10).
 
+Mark every finding with how far it is proven: **verified** (and how: decoded known string, corrupt-and-boot test,
+breakpoint hit, roundtrip test) or **guess** (and why). Promote a guess before code depends on it. Addresses are for
+the dump in `rom.sha1` unless a note says otherwise.
+
+| File | Covers | State |
+|---|---|---|
+| README.md (this file) | memory map, graphics codec, banks, screens, text bank | verified unless marked |
+| graphics.md | graphics text survey per resource | verified (seen in game or offline preview, as noted) |
+
 ## Game
 Rhythm game (dance/sing to arrows) with karaoke lyrics. No font-rendered dialogue was found: every Japanese
 element seen so far is a pre-rendered compressed image (menus, buttons, message bars, results, lyrics lines).

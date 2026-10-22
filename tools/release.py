@@ -6,7 +6,8 @@ import hashlib, os, subprocess, sys, zipfile, zlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-SKILL = r"H:\translation\batch\.claude\skills\translate-retro-game"
+SKILL = os.environ.get("SKILL", os.path.join(os.path.expanduser("~"), ".claude", "plugins", "marketplaces",
+                                             "retro-translation", "skills", "translate-retro-game"))
 SLUG = "mermaid-melody-pichi-pichi-pitch"
 VERSION = "1.0"
 PY = [sys.executable, "-X", "utf8"]
