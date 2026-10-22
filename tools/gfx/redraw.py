@@ -151,12 +151,13 @@ def r_209():
 
 
 # ---------------------------------------------------------------- title screen logo + copyright (#2, OBJ origin 0,0)
-TTF = "C:/Windows/Fonts/ARLRDBD.TTF"   # Arial Rounded MT Bold, binarised at large sizes only
+TTF = os.path.join(ROOT, "fonts", "Nunito.ttf")   # OFL, ExtraBold (800); binarised at large sizes only
 
 
 def ttf_mask(text, size, thresh=110):
     from PIL import Image, ImageDraw, ImageFont
     f = ImageFont.truetype(TTF, size)
+    f.set_variation_by_axes([800])
     b = f.getbbox(text)
     im = Image.new("L", (b[2] + 4, b[3] + 4), 0)
     ImageDraw.Draw(im).text((2, 2), text, font=f, fill=255)

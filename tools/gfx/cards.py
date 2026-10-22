@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(HERE))
 import res, uemu, pixfont  # noqa: E402
 
 BANK = "0xc67d94"
-FONT = r"C:\Windows\Fonts\comicbd.ttf"
+FONT = os.path.join(ROOT, "fonts", "Nunito.ttf")  # OFL, ExtraBold (800), same as the title logo
 # logo sticker boxes (screen x, y, w, h) covering the Japanese "Mermaid Melody Pichi Pichi Pitch" logo
 LOGO = {164: (2, 114, 126, 44), 165: (2, 0, 116, 40), 166: (112, 114, 126, 44), 167: (112, 114, 126, 44), 168: (2, 114, 126, 44),
         169: (2, 114, 126, 44), 170: (110, 114, 128, 44), 171: (2, 114, 128, 46), 172: (2, 0, 126, 44),
@@ -95,6 +95,7 @@ class Card:
 
 def text_mask(text, size):
     f = ImageFont.truetype(FONT, size, layout_engine=ImageFont.Layout.BASIC)
+    f.set_variation_by_axes([800])
     l, t, r, b = f.getbbox(text)
     im = Image.new("L", (r - l + 2, b - t + 2), 0)
     ImageDraw.Draw(im).text((1 - l, 1 - t), text, fill=255, font=f)

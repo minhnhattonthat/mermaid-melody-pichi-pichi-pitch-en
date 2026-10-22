@@ -13,3 +13,4 @@ decision replaces one, mark the old one "replaced by D<n>" instead of deleting i
 | D5 | 2026-10-16 | Graphics text left in Japanese | none (default), list | None: all graphics text in scope. #177 left Japanese only because no screen shows it. |
 | D6 | 2026-10-16 | Specs and plans | need approval, pre-approved | Pre-approved through release; never push or publish without the user. |
 | D7 | 2026-10-16 | Glossary scope | this game only, shared with the sequel | Keep it game-neutral so Pichi Pichi Party (sibling repo) can reuse it. |
+| D8 | 2026-10-23 | Fonts for graphics text | Windows fonts (Arial Rounded, Comic Sans), open fonts | Open fonts: OFL Nunito ExtraBold, so every font is redistributable. |
