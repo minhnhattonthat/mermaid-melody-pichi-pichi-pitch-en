@@ -27,8 +27,8 @@ helps most.
 Needs Python 3.12+ with Pillow, and your own dump of the Japanese game.
 
 ```sh
-git clone https://github.com/minhnhattonthat/<repo>
-cd <repo>
+git clone https://github.com/minhnhattonthat/mermaid-melody-pichi-pichi-pitch-en
+cd mermaid-melody-pichi-pichi-pitch-en
 # copy your dump to: rom/Mermaid Melody - Pichi Pichi Pitch (Japan).gba
 #   (16777216 bytes, SHA-1 4a0422acf0f22dd85f35a2e040adcfdf70dcc6ec; the build refuses any other dump, see rom.sha1)
 python -X utf8 tools/build.py build                    # -> build/mmppp_en.gba

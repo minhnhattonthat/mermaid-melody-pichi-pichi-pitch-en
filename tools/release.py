@@ -8,7 +8,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 SKILL = os.environ.get("SKILL", os.path.join(os.path.expanduser("~"), ".claude", "plugins", "marketplaces",
                                              "retro-translation", "skills", "translate-retro-game"))
-SLUG = "mermaid-melody-pichi-pichi-pitch"
 VERSION = "1.0"
 PY = [sys.executable, "-X", "utf8"]
 
@@ -47,7 +46,7 @@ def main():
         v=VERSION, o=o, p=p, patch=os.path.basename(patch), psha=ps)
     rp = os.path.join(rel, "README.txt")
     open(rp, "w", encoding="utf-8", newline="\r\n").write(readme)
-    zp = os.path.join(rel, f"{SLUG}_en.zip")
+    zp = os.path.join(rel, f"Mermaid_Melody_Pichi_Pichi_Pitch_EN_v{VERSION}.zip")
     with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED) as z:
         z.write(patch, os.path.basename(patch))
         z.write(rp, "README.txt")
