@@ -9,6 +9,22 @@ no game data you can play; you need your own dump of the Japanese game.
 **Found a bug?** [Report it](../../issues/new/choose): untranslated text, typos, overflow, crashes. Attaching a savestate
 helps most.
 
+## Translation status
+
+| Part | Status |
+|---|---|
+| Song lyrics (karaoke bar) | Translated (for meaning, not singable) |
+| Menus, buttons, message bars, song plates, results | Translated |
+| Title logo and illustration cards | Translated |
+| Link-cable messages, profile, save messages | Translated ("save data is damaged" screens not checked in play) |
+| Name entry | Translated (Latin letters) |
+| Hippo song maker | Translated (its default song is a short English adaptation, 8 letters per line) |
+| Staff roll and song credits | Translated (a few staff name readings may be wrong) |
+
+Known issues: the score unit is shortened to "pts"; small tile artifacts around the English logo on a few
+illustration cards; one crowd-banner picture is still Japanese (no screen showing it was found); the "CLEAR!" banner
+was not seen in play.
+
 ## What's here
 
 | Path | What it is |
